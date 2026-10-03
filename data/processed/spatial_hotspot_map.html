@@ -1,0 +1,3401 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_030a597bda2e8475ab8576e1cf29adf1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_030a597bda2e8475ab8576e1cf29adf1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_030a597bda2e8475ab8576e1cf29adf1 = L.map(
+                "map_030a597bda2e8475ab8576e1cf29adf1",
+                {
+                    center: [37.1491865843681, -87.52408782252643],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b0ff5c127cba7a7185861e5673bd02ec = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b0ff5c127cba7a7185861e5673bd02ec.addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+            var circle_marker_8d7dde330f240c61b961c8edfda19bb3 = L.circleMarker(
+                [39.95305548016232, -75.16821971641379],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.53, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_5b6af26d117c53f01c6e98e8e5085c33 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e7c746298e3916c8ee864bd7fb8c7210 = $(`<div id="html_e7c746298e3916c8ee864bd7fb8c7210" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 3<br>     <b>Businesses:</b> 10,871<br>     <b>Total Reviews:</b> 805,779<br>     <b>Avg Reviews/Business:</b> 74.12<br>     <b>Avg Stars:</b> 3.71     </div>`)[0];
+                popup_5b6af26d117c53f01c6e98e8e5085c33.setContent(html_e7c746298e3916c8ee864bd7fb8c7210);
+            
+        
+
+        circle_marker_8d7dde330f240c61b961c8edfda19bb3.bindPopup(popup_5b6af26d117c53f01c6e98e8e5085c33)
+        ;
+
+        
+    
+    
+            circle_marker_8d7dde330f240c61b961c8edfda19bb3.bindTooltip(
+                `<div>
+                     Cluster 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4024735a6e72c8a2e5abe24c1b571d13 = L.circleMarker(
+                [39.50690086701048, -119.78849615954503],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.792857142857143, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_48d48c94d761e393db2315564f77f36d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_45365004311901d80f9a3da57805b062 = $(`<div id="html_45365004311901d80f9a3da57805b062" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 15<br>     <b>Businesses:</b> 6,155<br>     <b>Total Reviews:</b> 350,880<br>     <b>Avg Reviews/Business:</b> 57.01<br>     <b>Avg Stars:</b> 3.73     </div>`)[0];
+                popup_48d48c94d761e393db2315564f77f36d.setContent(html_45365004311901d80f9a3da57805b062);
+            
+        
+
+        circle_marker_4024735a6e72c8a2e5abe24c1b571d13.bindPopup(popup_48d48c94d761e393db2315564f77f36d)
+        ;
+
+        
+    
+    
+            circle_marker_4024735a6e72c8a2e5abe24c1b571d13.bindTooltip(
+                `<div>
+                     Cluster 15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e213a75062c7c9d44628e40c72ea62a4 = L.circleMarker(
+                [27.98147991765681, -82.48328121285626],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.522857142857143, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_04400d1dea30c2c5db91dfa2839e7e4b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_43ff020365e056910477a8dfcc08694d = $(`<div id="html_43ff020365e056910477a8dfcc08694d" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 8<br>     <b>Businesses:</b> 5,966<br>     <b>Total Reviews:</b> 326,264<br>     <b>Avg Reviews/Business:</b> 54.69<br>     <b>Avg Stars:</b> 3.63     </div>`)[0];
+                popup_04400d1dea30c2c5db91dfa2839e7e4b.setContent(html_43ff020365e056910477a8dfcc08694d);
+            
+        
+
+        circle_marker_e213a75062c7c9d44628e40c72ea62a4.bindPopup(popup_04400d1dea30c2c5db91dfa2839e7e4b)
+        ;
+
+        
+    
+    
+            circle_marker_e213a75062c7c9d44628e40c72ea62a4.bindTooltip(
+                `<div>
+                     Cluster 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4399ebfb205e5db083ab7588286a21b = L.circleMarker(
+                [32.24805438512152, -110.9280375502564],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.404285714285715, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_f6bf4da58b1cc5b9d2cdc2ac88b17a8b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b65ce6705798032b14f6574da0d656ae = $(`<div id="html_b65ce6705798032b14f6574da0d656ae" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 2<br>     <b>Businesses:</b> 5,883<br>     <b>Total Reviews:</b> 275,442<br>     <b>Avg Reviews/Business:</b> 46.82<br>     <b>Avg Stars:</b> 3.64     </div>`)[0];
+                popup_f6bf4da58b1cc5b9d2cdc2ac88b17a8b.setContent(html_b65ce6705798032b14f6574da0d656ae);
+            
+        
+
+        circle_marker_e4399ebfb205e5db083ab7588286a21b.bindPopup(popup_f6bf4da58b1cc5b9d2cdc2ac88b17a8b)
+        ;
+
+        
+    
+    
+            circle_marker_e4399ebfb205e5db083ab7588286a21b.bindTooltip(
+                `<div>
+                     Cluster 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1ac34496ec7f29d366a0bebea6c3faf8 = L.circleMarker(
+                [29.95051148289564, -90.08111015055076],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.448571428571428, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_6f63a3ebb11374945d505ebf6e82b98d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_128595e8bf015d492aa6ebdc6c9861f2 = $(`<div id="html_128595e8bf015d492aa6ebdc6c9861f2" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 11<br>     <b>Businesses:</b> 5,214<br>     <b>Total Reviews:</b> 592,488<br>     <b>Avg Reviews/Business:</b> 113.63<br>     <b>Avg Stars:</b> 3.87     </div>`)[0];
+                popup_6f63a3ebb11374945d505ebf6e82b98d.setContent(html_128595e8bf015d492aa6ebdc6c9861f2);
+            
+        
+
+        circle_marker_1ac34496ec7f29d366a0bebea6c3faf8.bindPopup(popup_6f63a3ebb11374945d505ebf6e82b98d)
+        ;
+
+        
+    
+    
+            circle_marker_1ac34496ec7f29d366a0bebea6c3faf8.bindTooltip(
+                `<div>
+                     Cluster 11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6cdf8967d2c1b2d5cb9594f0f15c466c = L.circleMarker(
+                [36.14725032503273, -86.77991636882095],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.914285714285715, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_ca2dbe991476637800f6abd650cda430 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dc2a9e07c65dffc8e34273ff0ae762ce = $(`<div id="html_dc2a9e07c65dffc8e34273ff0ae762ce" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 17<br>     <b>Businesses:</b> 4,140<br>     <b>Total Reviews:</b> 328,429<br>     <b>Avg Reviews/Business:</b> 79.33<br>     <b>Avg Stars:</b> 3.75     </div>`)[0];
+                popup_ca2dbe991476637800f6abd650cda430.setContent(html_dc2a9e07c65dffc8e34273ff0ae762ce);
+            
+        
+
+        circle_marker_6cdf8967d2c1b2d5cb9594f0f15c466c.bindPopup(popup_ca2dbe991476637800f6abd650cda430)
+        ;
+
+        
+    
+    
+            circle_marker_6cdf8967d2c1b2d5cb9594f0f15c466c.bindTooltip(
+                `<div>
+                     Cluster 17
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_62f3aae7570b56c70a21cb4f743eb03b = L.circleMarker(
+                [27.819175654805843, -82.69216874804069],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.622857142857143, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_fc4284d81518d93ca4ccd99a5bf1fbb9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ee8e8f09dec56dcce183df1b2c161cbb = $(`<div id="html_ee8e8f09dec56dcce183df1b2c161cbb" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 28<br>     <b>Businesses:</b> 3,936<br>     <b>Total Reviews:</b> 172,131<br>     <b>Avg Reviews/Business:</b> 43.73<br>     <b>Avg Stars:</b> 3.67     </div>`)[0];
+                popup_fc4284d81518d93ca4ccd99a5bf1fbb9.setContent(html_ee8e8f09dec56dcce183df1b2c161cbb);
+            
+        
+
+        circle_marker_62f3aae7570b56c70a21cb4f743eb03b.bindPopup(popup_fc4284d81518d93ca4ccd99a5bf1fbb9)
+        ;
+
+        
+    
+    
+            circle_marker_62f3aae7570b56c70a21cb4f743eb03b.bindTooltip(
+                `<div>
+                     Cluster 28
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b2473fea200edc27252a7ecb02f116a = L.circleMarker(
+                [38.60693768255506, -90.2643248682933],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_0f220d2c8f3d15270c723f3abc04f7a4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_290a9d777f46953836ac98a88a53b42f = $(`<div id="html_290a9d777f46953836ac98a88a53b42f" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 1<br>     <b>Businesses:</b> 3,451<br>     <b>Total Reviews:</b> 218,402<br>     <b>Avg Reviews/Business:</b> 63.29<br>     <b>Avg Stars:</b> 3.71     </div>`)[0];
+                popup_0f220d2c8f3d15270c723f3abc04f7a4.setContent(html_290a9d777f46953836ac98a88a53b42f);
+            
+        
+
+        circle_marker_2b2473fea200edc27252a7ecb02f116a.bindPopup(popup_0f220d2c8f3d15270c723f3abc04f7a4)
+        ;
+
+        
+    
+    
+            circle_marker_2b2473fea200edc27252a7ecb02f116a.bindTooltip(
+                `<div>
+                     Cluster 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4d6604ae2c19156e8f8318918ac5ea20 = L.circleMarker(
+                [43.61246878310424, -116.27317603080073],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_2d36a7d0b71a20fdd5d204c534cc82dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1b534ef8d8fa92db2ee82c6c4059b166 = $(`<div id="html_1b534ef8d8fa92db2ee82c6c4059b166" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 18<br>     <b>Businesses:</b> 3,279<br>     <b>Total Reviews:</b> 122,977<br>     <b>Avg Reviews/Business:</b> 37.50<br>     <b>Avg Stars:</b> 3.66     </div>`)[0];
+                popup_2d36a7d0b71a20fdd5d204c534cc82dc.setContent(html_1b534ef8d8fa92db2ee82c6c4059b166);
+            
+        
+
+        circle_marker_4d6604ae2c19156e8f8318918ac5ea20.bindPopup(popup_2d36a7d0b71a20fdd5d204c534cc82dc)
+        ;
+
+        
+    
+    
+            circle_marker_4d6604ae2c19156e8f8318918ac5ea20.bindTooltip(
+                `<div>
+                     Cluster 18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fbe2950657bed402968d6f35a6a20d84 = L.circleMarker(
+                [34.42498599516167, -119.70840839860698],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_1874b99217b3206062279ed4259cd020 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ab7456dca311a15bff554a41ffb87b2f = $(`<div id="html_ab7456dca311a15bff554a41ffb87b2f" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 0<br>     <b>Businesses:</b> 3,227<br>     <b>Total Reviews:</b> 233,522<br>     <b>Avg Reviews/Business:</b> 72.37<br>     <b>Avg Stars:</b> 4.04     </div>`)[0];
+                popup_1874b99217b3206062279ed4259cd020.setContent(html_ab7456dca311a15bff554a41ffb87b2f);
+            
+        
+
+        circle_marker_fbe2950657bed402968d6f35a6a20d84.bindPopup(popup_1874b99217b3206062279ed4259cd020)
+        ;
+
+        
+    
+    
+            circle_marker_fbe2950657bed402968d6f35a6a20d84.bindTooltip(
+                `<div>
+                     Cluster 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_09637b6ceeadb4b6063ee18a6cbeb4c6 = L.circleMarker(
+                [30.005264072826357, -90.18820711685208],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_678ba21587cc9a589cb9edf2db277718 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8cdb9c8e4ff80b416b2b547f80ee48d4 = $(`<div id="html_8cdb9c8e4ff80b416b2b547f80ee48d4" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 12<br>     <b>Businesses:</b> 1,867<br>     <b>Total Reviews:</b> 72,044<br>     <b>Avg Reviews/Business:</b> 38.59<br>     <b>Avg Stars:</b> 3.42     </div>`)[0];
+                popup_678ba21587cc9a589cb9edf2db277718.setContent(html_8cdb9c8e4ff80b416b2b547f80ee48d4);
+            
+        
+
+        circle_marker_09637b6ceeadb4b6063ee18a6cbeb4c6.bindPopup(popup_678ba21587cc9a589cb9edf2db277718)
+        ;
+
+        
+    
+    
+            circle_marker_09637b6ceeadb4b6063ee18a6cbeb4c6.bindTooltip(
+                `<div>
+                     Cluster 12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b0ad7940f4957da7dfeedfb60a71204f = L.circleMarker(
+                [39.92005931957349, -74.97785794992794],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_16b6b83c46e50e26832ab63df3b577d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f9980fb700a79b50b78fb9495f065169 = $(`<div id="html_f9980fb700a79b50b78fb9495f065169" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 25<br>     <b>Businesses:</b> 1,690<br>     <b>Total Reviews:</b> 66,390<br>     <b>Avg Reviews/Business:</b> 39.28<br>     <b>Avg Stars:</b> 3.38     </div>`)[0];
+                popup_16b6b83c46e50e26832ab63df3b577d8.setContent(html_f9980fb700a79b50b78fb9495f065169);
+            
+        
+
+        circle_marker_b0ad7940f4957da7dfeedfb60a71204f.bindPopup(popup_16b6b83c46e50e26832ab63df3b577d8)
+        ;
+
+        
+    
+    
+            circle_marker_b0ad7940f4957da7dfeedfb60a71204f.bindTooltip(
+                `<div>
+                     Cluster 25
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6df83aa68be640ee7dc0de99e661e857 = L.circleMarker(
+                [39.77132517728792, -86.15327835222101],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_4a5c99c8b2a3356c446475dcb0970d3e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8cb85c520716dcc4769b76bc1d7413f4 = $(`<div id="html_8cb85c520716dcc4769b76bc1d7413f4" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 72<br>     <b>Businesses:</b> 1,581<br>     <b>Total Reviews:</b> 125,308<br>     <b>Avg Reviews/Business:</b> 79.26<br>     <b>Avg Stars:</b> 3.91     </div>`)[0];
+                popup_4a5c99c8b2a3356c446475dcb0970d3e.setContent(html_8cb85c520716dcc4769b76bc1d7413f4);
+            
+        
+
+        circle_marker_6df83aa68be640ee7dc0de99e661e857.bindPopup(popup_4a5c99c8b2a3356c446475dcb0970d3e)
+        ;
+
+        
+    
+    
+            circle_marker_6df83aa68be640ee7dc0de99e661e857.bindTooltip(
+                `<div>
+                     Cluster 72
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_60efe1d58a577ecca025ec8e25a1bfe8 = L.circleMarker(
+                [27.946113823242023, -82.76585749113495],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_864a615e6da363ae9f02c3e5f053e749 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a711a7576c49639cde09d4d70421a006 = $(`<div id="html_a711a7576c49639cde09d4d70421a006" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 10<br>     <b>Businesses:</b> 1,385<br>     <b>Total Reviews:</b> 45,755<br>     <b>Avg Reviews/Business:</b> 33.04<br>     <b>Avg Stars:</b> 3.61     </div>`)[0];
+                popup_864a615e6da363ae9f02c3e5f053e749.setContent(html_a711a7576c49639cde09d4d70421a006);
+            
+        
+
+        circle_marker_60efe1d58a577ecca025ec8e25a1bfe8.bindPopup(popup_864a615e6da363ae9f02c3e5f053e749)
+        ;
+
+        
+    
+    
+            circle_marker_60efe1d58a577ecca025ec8e25a1bfe8.bindTooltip(
+                `<div>
+                     Cluster 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4286ba55d43e29427bb7005a1cc68da6 = L.circleMarker(
+                [40.09572943294922, -75.34795819681096],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_021388a6b2deaa7a3631c84f63e261a8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e5699fcba28a3fd72642ba9a87d0b9f5 = $(`<div id="html_e5699fcba28a3fd72642ba9a87d0b9f5" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 30<br>     <b>Businesses:</b> 1,351<br>     <b>Total Reviews:</b> 59,034<br>     <b>Avg Reviews/Business:</b> 43.70<br>     <b>Avg Stars:</b> 3.34     </div>`)[0];
+                popup_021388a6b2deaa7a3631c84f63e261a8.setContent(html_e5699fcba28a3fd72642ba9a87d0b9f5);
+            
+        
+
+        circle_marker_4286ba55d43e29427bb7005a1cc68da6.bindPopup(popup_021388a6b2deaa7a3631c84f63e261a8)
+        ;
+
+        
+    
+    
+            circle_marker_4286ba55d43e29427bb7005a1cc68da6.bindTooltip(
+                `<div>
+                     Cluster 30
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_494e0a4b8add828cd94dd4276ba1f78c = L.circleMarker(
+                [53.54810853482103, -113.50740812151484],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_c8136c5c8c5370dd70b6c2239e1334cd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1d9751bc00c75221348f4f22fddc65ec = $(`<div id="html_1d9751bc00c75221348f4f22fddc65ec" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 13<br>     <b>Businesses:</b> 1,327<br>     <b>Total Reviews:</b> 31,798<br>     <b>Avg Reviews/Business:</b> 23.96<br>     <b>Avg Stars:</b> 3.62     </div>`)[0];
+                popup_c8136c5c8c5370dd70b6c2239e1334cd.setContent(html_1d9751bc00c75221348f4f22fddc65ec);
+            
+        
+
+        circle_marker_494e0a4b8add828cd94dd4276ba1f78c.bindPopup(popup_c8136c5c8c5370dd70b6c2239e1334cd)
+        ;
+
+        
+    
+    
+            circle_marker_494e0a4b8add828cd94dd4276ba1f78c.bindTooltip(
+                `<div>
+                     Cluster 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_429fa5045614964fbb40b534b39433df = L.circleMarker(
+                [53.50050508344141, -113.49560661233468],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_c337e260d3250ac645668b31e5f35243 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_528acc1e83e998971f654bf98c618cd4 = $(`<div id="html_528acc1e83e998971f654bf98c618cd4" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 40<br>     <b>Businesses:</b> 1,246<br>     <b>Total Reviews:</b> 28,038<br>     <b>Avg Reviews/Business:</b> 22.50<br>     <b>Avg Stars:</b> 3.52     </div>`)[0];
+                popup_c337e260d3250ac645668b31e5f35243.setContent(html_528acc1e83e998971f654bf98c618cd4);
+            
+        
+
+        circle_marker_429fa5045614964fbb40b534b39433df.bindPopup(popup_c337e260d3250ac645668b31e5f35243)
+        ;
+
+        
+    
+    
+            circle_marker_429fa5045614964fbb40b534b39433df.bindTooltip(
+                `<div>
+                     Cluster 40
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8d4102b3aa38bd9c6d58b86adb3f34a4 = L.circleMarker(
+                [40.042105640425966, -75.07088317059261],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_d6b02ad793b2021a4b79a2b7f8484c61 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b601c77f4611a973a6caef2f81fd8111 = $(`<div id="html_b601c77f4611a973a6caef2f81fd8111" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 188<br>     <b>Businesses:</b> 1,190<br>     <b>Total Reviews:</b> 28,361<br>     <b>Avg Reviews/Business:</b> 23.83<br>     <b>Avg Stars:</b> 3.34     </div>`)[0];
+                popup_d6b02ad793b2021a4b79a2b7f8484c61.setContent(html_b601c77f4611a973a6caef2f81fd8111);
+            
+        
+
+        circle_marker_8d4102b3aa38bd9c6d58b86adb3f34a4.bindPopup(popup_d6b02ad793b2021a4b79a2b7f8484c61)
+        ;
+
+        
+    
+    
+            circle_marker_8d4102b3aa38bd9c6d58b86adb3f34a4.bindTooltip(
+                `<div>
+                     Cluster 188
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b01dc7eb89d1378c2db96e4e727a6992 = L.circleMarker(
+                [28.035231913231417, -82.74899544547931],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_b57de7cb8927b71fe68e7386161941db = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2cbfc58ba7904f049cda1b9c84a23ddb = $(`<div id="html_2cbfc58ba7904f049cda1b9c84a23ddb" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 201<br>     <b>Businesses:</b> 1,165<br>     <b>Total Reviews:</b> 43,592<br>     <b>Avg Reviews/Business:</b> 37.42<br>     <b>Avg Stars:</b> 3.67     </div>`)[0];
+                popup_b57de7cb8927b71fe68e7386161941db.setContent(html_2cbfc58ba7904f049cda1b9c84a23ddb);
+            
+        
+
+        circle_marker_b01dc7eb89d1378c2db96e4e727a6992.bindPopup(popup_b57de7cb8927b71fe68e7386161941db)
+        ;
+
+        
+    
+    
+            circle_marker_b01dc7eb89d1378c2db96e4e727a6992.bindTooltip(
+                `<div>
+                     Cluster 201
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf20740fd163d948634c6a50d16050f2 = L.circleMarker(
+                [38.61714696870647, -90.34191075235742],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_2d03c18217ee5d57b34156bf2d6b1fc1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9cce775c88c4352525130ff366b59ed5 = $(`<div id="html_9cce775c88c4352525130ff366b59ed5" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 4<br>     <b>Businesses:</b> 1,144<br>     <b>Total Reviews:</b> 49,724<br>     <b>Avg Reviews/Business:</b> 43.47<br>     <b>Avg Stars:</b> 3.66     </div>`)[0];
+                popup_2d03c18217ee5d57b34156bf2d6b1fc1.setContent(html_9cce775c88c4352525130ff366b59ed5);
+            
+        
+
+        circle_marker_bf20740fd163d948634c6a50d16050f2.bindPopup(popup_2d03c18217ee5d57b34156bf2d6b1fc1)
+        ;
+
+        
+    
+    
+            circle_marker_bf20740fd163d948634c6a50d16050f2.bindTooltip(
+                `<div>
+                     Cluster 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7fa53fcaa47c3c8ed0f54e6dfcbcccff = L.circleMarker(
+                [39.913317528284345, -86.07160650358715],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_68ec8af0d27abe53d9b0b2749813af3d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8941dd931ffa2eac3206a2acb96b9573 = $(`<div id="html_8941dd931ffa2eac3206a2acb96b9573" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 14<br>     <b>Businesses:</b> 1,137<br>     <b>Total Reviews:</b> 54,872<br>     <b>Avg Reviews/Business:</b> 48.26<br>     <b>Avg Stars:</b> 3.49     </div>`)[0];
+                popup_68ec8af0d27abe53d9b0b2749813af3d.setContent(html_8941dd931ffa2eac3206a2acb96b9573);
+            
+        
+
+        circle_marker_7fa53fcaa47c3c8ed0f54e6dfcbcccff.bindPopup(popup_68ec8af0d27abe53d9b0b2749813af3d)
+        ;
+
+        
+    
+    
+            circle_marker_7fa53fcaa47c3c8ed0f54e6dfcbcccff.bindTooltip(
+                `<div>
+                     Cluster 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_596516ae182e228b33dfbc68d6309d05 = L.circleMarker(
+                [27.93628884731683, -82.30691608144353],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_394b97bbc4bf4982a59bb57541b753cc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9cacd20fbf9d919afae71c7902bd85a0 = $(`<div id="html_9cacd20fbf9d919afae71c7902bd85a0" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 91<br>     <b>Businesses:</b> 1,022<br>     <b>Total Reviews:</b> 41,796<br>     <b>Avg Reviews/Business:</b> 40.90<br>     <b>Avg Stars:</b> 3.37     </div>`)[0];
+                popup_394b97bbc4bf4982a59bb57541b753cc.setContent(html_9cacd20fbf9d919afae71c7902bd85a0);
+            
+        
+
+        circle_marker_596516ae182e228b33dfbc68d6309d05.bindPopup(popup_394b97bbc4bf4982a59bb57541b753cc)
+        ;
+
+        
+    
+    
+            circle_marker_596516ae182e228b33dfbc68d6309d05.bindTooltip(
+                `<div>
+                     Cluster 91
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3b56edc931c9f2fbea4000393b1a661 = L.circleMarker(
+                [40.023237606150346, -75.22337840859569],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_b8011b789d26a205da2b4aec62f2b53d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_40c3aa1318fe37802395758e1fe1fe18 = $(`<div id="html_40c3aa1318fe37802395758e1fe1fe18" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 19<br>     <b>Businesses:</b> 997<br>     <b>Total Reviews:</b> 44,967<br>     <b>Avg Reviews/Business:</b> 45.10<br>     <b>Avg Stars:</b> 3.58     </div>`)[0];
+                popup_b8011b789d26a205da2b4aec62f2b53d.setContent(html_40c3aa1318fe37802395758e1fe1fe18);
+            
+        
+
+        circle_marker_f3b56edc931c9f2fbea4000393b1a661.bindPopup(popup_b8011b789d26a205da2b4aec62f2b53d)
+        ;
+
+        
+    
+    
+            circle_marker_f3b56edc931c9f2fbea4000393b1a661.bindTooltip(
+                `<div>
+                     Cluster 19
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_069fc605ffd5068115a55cd2694ae2c7 = L.circleMarker(
+                [40.13098085647104, -75.12949719501603],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_dc72db6ba81f8bbb22ca14347d37cb43 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_398051c941e82cc0ec603aae3f5f0e53 = $(`<div id="html_398051c941e82cc0ec603aae3f5f0e53" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 52<br>     <b>Businesses:</b> 967<br>     <b>Total Reviews:</b> 34,417<br>     <b>Avg Reviews/Business:</b> 35.59<br>     <b>Avg Stars:</b> 3.49     </div>`)[0];
+                popup_dc72db6ba81f8bbb22ca14347d37cb43.setContent(html_398051c941e82cc0ec603aae3f5f0e53);
+            
+        
+
+        circle_marker_069fc605ffd5068115a55cd2694ae2c7.bindPopup(popup_dc72db6ba81f8bbb22ca14347d37cb43)
+        ;
+
+        
+    
+    
+            circle_marker_069fc605ffd5068115a55cd2694ae2c7.bindTooltip(
+                `<div>
+                     Cluster 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_68e788dbf4750c99b115955b08ed0559 = L.circleMarker(
+                [35.953223476305624, -86.81551951667124],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_70d413834456a58f0675a46d30e1da3f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_38ff87ea98e111cd620a6cb1cf954c65 = $(`<div id="html_38ff87ea98e111cd620a6cb1cf954c65" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 89<br>     <b>Businesses:</b> 800<br>     <b>Total Reviews:</b> 33,095<br>     <b>Avg Reviews/Business:</b> 41.37<br>     <b>Avg Stars:</b> 3.46     </div>`)[0];
+                popup_70d413834456a58f0675a46d30e1da3f.setContent(html_38ff87ea98e111cd620a6cb1cf954c65);
+            
+        
+
+        circle_marker_68e788dbf4750c99b115955b08ed0559.bindPopup(popup_70d413834456a58f0675a46d30e1da3f)
+        ;
+
+        
+    
+    
+            circle_marker_68e788dbf4750c99b115955b08ed0559.bindTooltip(
+                `<div>
+                     Cluster 89
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f27417286c14f2e3d3ce249f8e59248f = L.circleMarker(
+                [40.01233422311725, -75.30275821414874],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_17e0ef53ca9e016042288d0764793179 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_30ea15b33f301c383632fcef86fb9aaa = $(`<div id="html_30ea15b33f301c383632fcef86fb9aaa" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 21<br>     <b>Businesses:</b> 794<br>     <b>Total Reviews:</b> 30,247<br>     <b>Avg Reviews/Business:</b> 38.09<br>     <b>Avg Stars:</b> 3.69     </div>`)[0];
+                popup_17e0ef53ca9e016042288d0764793179.setContent(html_30ea15b33f301c383632fcef86fb9aaa);
+            
+        
+
+        circle_marker_f27417286c14f2e3d3ce249f8e59248f.bindPopup(popup_17e0ef53ca9e016042288d0764793179)
+        ;
+
+        
+    
+    
+            circle_marker_f27417286c14f2e3d3ce249f8e59248f.bindTooltip(
+                `<div>
+                     Cluster 21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d2f81dc1ac2db942db61ec63fa57b6d1 = L.circleMarker(
+                [39.97102620389895, -86.1345704752325],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_578fa70766d209ca6f0af59ed3366015 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70707ba3012a0228b129a0ed91a3a9e2 = $(`<div id="html_70707ba3012a0228b129a0ed91a3a9e2" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 29<br>     <b>Businesses:</b> 760<br>     <b>Total Reviews:</b> 33,747<br>     <b>Avg Reviews/Business:</b> 44.40<br>     <b>Avg Stars:</b> 3.76     </div>`)[0];
+                popup_578fa70766d209ca6f0af59ed3366015.setContent(html_70707ba3012a0228b129a0ed91a3a9e2);
+            
+        
+
+        circle_marker_d2f81dc1ac2db942db61ec63fa57b6d1.bindPopup(popup_578fa70766d209ca6f0af59ed3366015)
+        ;
+
+        
+    
+    
+            circle_marker_d2f81dc1ac2db942db61ec63fa57b6d1.bindTooltip(
+                `<div>
+                     Cluster 29
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_512249fb1b30a7d8a29d455d2b4ec4ce = L.circleMarker(
+                [28.255349892258696, -82.71755058153276],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_de85d096562b88cb6eae5fcbf1ba5b2a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb85562bc39e1bee78cfd2e155aa2b80 = $(`<div id="html_fb85562bc39e1bee78cfd2e155aa2b80" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 129<br>     <b>Businesses:</b> 690<br>     <b>Total Reviews:</b> 17,003<br>     <b>Avg Reviews/Business:</b> 24.64<br>     <b>Avg Stars:</b> 3.39     </div>`)[0];
+                popup_de85d096562b88cb6eae5fcbf1ba5b2a.setContent(html_fb85562bc39e1bee78cfd2e155aa2b80);
+            
+        
+
+        circle_marker_512249fb1b30a7d8a29d455d2b4ec4ce.bindPopup(popup_de85d096562b88cb6eae5fcbf1ba5b2a)
+        ;
+
+        
+    
+    
+            circle_marker_512249fb1b30a7d8a29d455d2b4ec4ce.bindTooltip(
+                `<div>
+                     Cluster 129
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a6f60454b7f699cf7e392d69c6cc18d2 = L.circleMarker(
+                [34.43660217138796, -119.82451723633687],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_c02079ca8a1bd2ea7e2ede860dc138d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1df028a762812fb4b8a3c561b3372c90 = $(`<div id="html_1df028a762812fb4b8a3c561b3372c90" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 389<br>     <b>Businesses:</b> 656<br>     <b>Total Reviews:</b> 27,955<br>     <b>Avg Reviews/Business:</b> 42.61<br>     <b>Avg Stars:</b> 3.85     </div>`)[0];
+                popup_c02079ca8a1bd2ea7e2ede860dc138d8.setContent(html_1df028a762812fb4b8a3c561b3372c90);
+            
+        
+
+        circle_marker_a6f60454b7f699cf7e392d69c6cc18d2.bindPopup(popup_c02079ca8a1bd2ea7e2ede860dc138d8)
+        ;
+
+        
+    
+    
+            circle_marker_a6f60454b7f699cf7e392d69c6cc18d2.bindTooltip(
+                `<div>
+                     Cluster 389
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2020d03732c009a798226d8ccbbe58bd = L.circleMarker(
+                [39.90321460922821, -75.05373469940257],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_4f8ee1dfaa74a674a422d94afa7fd2ff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d26d823645e6ce304485154db679f6eb = $(`<div id="html_d26d823645e6ce304485154db679f6eb" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 144<br>     <b>Businesses:</b> 624<br>     <b>Total Reviews:</b> 24,615<br>     <b>Avg Reviews/Business:</b> 39.45<br>     <b>Avg Stars:</b> 3.80     </div>`)[0];
+                popup_4f8ee1dfaa74a674a422d94afa7fd2ff.setContent(html_d26d823645e6ce304485154db679f6eb);
+            
+        
+
+        circle_marker_2020d03732c009a798226d8ccbbe58bd.bindPopup(popup_4f8ee1dfaa74a674a422d94afa7fd2ff)
+        ;
+
+        
+    
+    
+            circle_marker_2020d03732c009a798226d8ccbbe58bd.bindTooltip(
+                `<div>
+                     Cluster 144
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d145bb3c667f8d8f8a40b54db5db3bd9 = L.circleMarker(
+                [38.59718867112209, -90.4847487500649],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_620d582121096da15baeb4ab8e9cd2fb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aa9a607b2cd3551f74a989b4481428ab = $(`<div id="html_aa9a607b2cd3551f74a989b4481428ab" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 124<br>     <b>Businesses:</b> 584<br>     <b>Total Reviews:</b> 17,900<br>     <b>Avg Reviews/Business:</b> 30.65<br>     <b>Avg Stars:</b> 3.49     </div>`)[0];
+                popup_620d582121096da15baeb4ab8e9cd2fb.setContent(html_aa9a607b2cd3551f74a989b4481428ab);
+            
+        
+
+        circle_marker_d145bb3c667f8d8f8a40b54db5db3bd9.bindPopup(popup_620d582121096da15baeb4ab8e9cd2fb)
+        ;
+
+        
+    
+    
+            circle_marker_d145bb3c667f8d8f8a40b54db5db3bd9.bindTooltip(
+                `<div>
+                     Cluster 124
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3ce9a7133c341692c08ef1a2db656222 = L.circleMarker(
+                [29.897730443667893, -90.04862100511981],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_0cc4a149e579ecec548c8e61b8ea0464 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4ea389d3b6b0a1671e166bc1542eeb33 = $(`<div id="html_4ea389d3b6b0a1671e166bc1542eeb33" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 31<br>     <b>Businesses:</b> 570<br>     <b>Total Reviews:</b> 15,899<br>     <b>Avg Reviews/Business:</b> 27.89<br>     <b>Avg Stars:</b> 3.44     </div>`)[0];
+                popup_0cc4a149e579ecec548c8e61b8ea0464.setContent(html_4ea389d3b6b0a1671e166bc1542eeb33);
+            
+        
+
+        circle_marker_3ce9a7133c341692c08ef1a2db656222.bindPopup(popup_0cc4a149e579ecec548c8e61b8ea0464)
+        ;
+
+        
+    
+    
+            circle_marker_3ce9a7133c341692c08ef1a2db656222.bindTooltip(
+                `<div>
+                     Cluster 31
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_87af4bb7ddcf550e806be2c84dcfe464 = L.circleMarker(
+                [39.96335862139596, -75.59864312017827],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_c0042491d90e4cbd8ace24be9f3d59d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_92fe50bb877d33621603b900d814785c = $(`<div id="html_92fe50bb877d33621603b900d814785c" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 33<br>     <b>Businesses:</b> 520<br>     <b>Total Reviews:</b> 16,691<br>     <b>Avg Reviews/Business:</b> 32.10<br>     <b>Avg Stars:</b> 3.65     </div>`)[0];
+                popup_c0042491d90e4cbd8ace24be9f3d59d2.setContent(html_92fe50bb877d33621603b900d814785c);
+            
+        
+
+        circle_marker_87af4bb7ddcf550e806be2c84dcfe464.bindPopup(popup_c0042491d90e4cbd8ace24be9f3d59d2)
+        ;
+
+        
+    
+    
+            circle_marker_87af4bb7ddcf550e806be2c84dcfe464.bindTooltip(
+                `<div>
+                     Cluster 33
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9b306305c929f01c15c06ed0c70b4726 = L.circleMarker(
+                [27.747007569425, -82.73746371954903],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_c40cdb16c59c1b49950c6d94299b0749 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fab770bc30bc162eb9db2af0bb350d19 = $(`<div id="html_fab770bc30bc162eb9db2af0bb350d19" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 5<br>     <b>Businesses:</b> 512<br>     <b>Total Reviews:</b> 35,724<br>     <b>Avg Reviews/Business:</b> 69.77<br>     <b>Avg Stars:</b> 3.86     </div>`)[0];
+                popup_c40cdb16c59c1b49950c6d94299b0749.setContent(html_fab770bc30bc162eb9db2af0bb350d19);
+            
+        
+
+        circle_marker_9b306305c929f01c15c06ed0c70b4726.bindPopup(popup_c40cdb16c59c1b49950c6d94299b0749)
+        ;
+
+        
+    
+    
+            circle_marker_9b306305c929f01c15c06ed0c70b4726.bindTooltip(
+                `<div>
+                     Cluster 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b7930d925eb7b2505e9d632088e2f96 = L.circleMarker(
+                [38.587552997001374, -89.9585186680004],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_d7bc3efc010078e9d8ec8048759c01c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_914a7b977ee5fd12f5e4899b2f6d9106 = $(`<div id="html_914a7b977ee5fd12f5e4899b2f6d9106" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 47<br>     <b>Businesses:</b> 510<br>     <b>Total Reviews:</b> 15,164<br>     <b>Avg Reviews/Business:</b> 29.73<br>     <b>Avg Stars:</b> 3.25     </div>`)[0];
+                popup_d7bc3efc010078e9d8ec8048759c01c1.setContent(html_914a7b977ee5fd12f5e4899b2f6d9106);
+            
+        
+
+        circle_marker_7b7930d925eb7b2505e9d632088e2f96.bindPopup(popup_d7bc3efc010078e9d8ec8048759c01c1)
+        ;
+
+        
+    
+    
+            circle_marker_7b7930d925eb7b2505e9d632088e2f96.bindTooltip(
+                `<div>
+                     Cluster 47
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1584ca708e6a5235525418d37f6ae208 = L.circleMarker(
+                [39.92034162253952, -86.21785521311632],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_cd3f274fc94c45d7bb8759c8e57eb707 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f170186ca8ea206c2057fdfd648d5aca = $(`<div id="html_f170186ca8ea206c2057fdfd648d5aca" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 35<br>     <b>Businesses:</b> 496<br>     <b>Total Reviews:</b> 18,665<br>     <b>Avg Reviews/Business:</b> 37.63<br>     <b>Avg Stars:</b> 3.48     </div>`)[0];
+                popup_cd3f274fc94c45d7bb8759c8e57eb707.setContent(html_f170186ca8ea206c2057fdfd648d5aca);
+            
+        
+
+        circle_marker_1584ca708e6a5235525418d37f6ae208.bindPopup(popup_cd3f274fc94c45d7bb8759c8e57eb707)
+        ;
+
+        
+    
+    
+            circle_marker_1584ca708e6a5235525418d37f6ae208.bindTooltip(
+                `<div>
+                     Cluster 35
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_98dfffe70b3ece3b39124b2010866309 = L.circleMarker(
+                [29.959947830052283, -90.18701900260643],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_3961b18e5df213ed67edfe431696441d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_50563d0b979f0b9ea83e7188dd6899e3 = $(`<div id="html_50563d0b979f0b9ea83e7188dd6899e3" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 348<br>     <b>Businesses:</b> 482<br>     <b>Total Reviews:</b> 14,416<br>     <b>Avg Reviews/Business:</b> 29.91<br>     <b>Avg Stars:</b> 3.56     </div>`)[0];
+                popup_3961b18e5df213ed67edfe431696441d.setContent(html_50563d0b979f0b9ea83e7188dd6899e3);
+            
+        
+
+        circle_marker_98dfffe70b3ece3b39124b2010866309.bindPopup(popup_3961b18e5df213ed67edfe431696441d)
+        ;
+
+        
+    
+    
+            circle_marker_98dfffe70b3ece3b39124b2010866309.bindTooltip(
+                `<div>
+                     Cluster 348
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a2207464c641981a5ac39ae5dae9ab46 = L.circleMarker(
+                [40.05713286266443, -75.19211209182802],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_f47fcae38492671021f3bad4eef94abe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2a72ea6874284fcd662736677c59043f = $(`<div id="html_2a72ea6874284fcd662736677c59043f" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 99<br>     <b>Businesses:</b> 478<br>     <b>Total Reviews:</b> 16,888<br>     <b>Avg Reviews/Business:</b> 35.33<br>     <b>Avg Stars:</b> 3.67     </div>`)[0];
+                popup_f47fcae38492671021f3bad4eef94abe.setContent(html_2a72ea6874284fcd662736677c59043f);
+            
+        
+
+        circle_marker_a2207464c641981a5ac39ae5dae9ab46.bindPopup(popup_f47fcae38492671021f3bad4eef94abe)
+        ;
+
+        
+    
+    
+            circle_marker_a2207464c641981a5ac39ae5dae9ab46.bindTooltip(
+                `<div>
+                     Cluster 99
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6a065cc447d28382df1a31532c6845cf = L.circleMarker(
+                [39.87134087013705, -86.13593216315306],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_6bb7c9d9091a7e118aa5159fb2ad2528 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6d57b0d916db7f1bed0b7dc1df4d2626 = $(`<div id="html_6d57b0d916db7f1bed0b7dc1df4d2626" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 32<br>     <b>Businesses:</b> 475<br>     <b>Total Reviews:</b> 29,992<br>     <b>Avg Reviews/Business:</b> 63.14<br>     <b>Avg Stars:</b> 3.77     </div>`)[0];
+                popup_6bb7c9d9091a7e118aa5159fb2ad2528.setContent(html_6d57b0d916db7f1bed0b7dc1df4d2626);
+            
+        
+
+        circle_marker_6a065cc447d28382df1a31532c6845cf.bindPopup(popup_6bb7c9d9091a7e118aa5159fb2ad2528)
+        ;
+
+        
+    
+    
+            circle_marker_6a065cc447d28382df1a31532c6845cf.bindTooltip(
+                `<div>
+                     Cluster 32
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0019be250f9cab1299028668d4b13a4d = L.circleMarker(
+                [39.74720241835773, -75.55927572291888],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_7faf0b495bc6755513c2813ddf49f345 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8dd9e72edd24c20a6771a6fdbd43763e = $(`<div id="html_8dd9e72edd24c20a6771a6fdbd43763e" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 119<br>     <b>Businesses:</b> 466<br>     <b>Total Reviews:</b> 16,937<br>     <b>Avg Reviews/Business:</b> 36.35<br>     <b>Avg Stars:</b> 3.53     </div>`)[0];
+                popup_7faf0b495bc6755513c2813ddf49f345.setContent(html_8dd9e72edd24c20a6771a6fdbd43763e);
+            
+        
+
+        circle_marker_0019be250f9cab1299028668d4b13a4d.bindPopup(popup_7faf0b495bc6755513c2813ddf49f345)
+        ;
+
+        
+    
+    
+            circle_marker_0019be250f9cab1299028668d4b13a4d.bindTooltip(
+                `<div>
+                     Cluster 119
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_494909f1bcb4dea97a46ada13c473373 = L.circleMarker(
+                [40.04446744947532, -75.39924798383862],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_365c64e8b389b699b91f3b57e129b59f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bf7af5c527b1c63b4ace6b01c99439e8 = $(`<div id="html_bf7af5c527b1c63b4ace6b01c99439e8" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 87<br>     <b>Businesses:</b> 466<br>     <b>Total Reviews:</b> 18,966<br>     <b>Avg Reviews/Business:</b> 40.70<br>     <b>Avg Stars:</b> 3.69     </div>`)[0];
+                popup_365c64e8b389b699b91f3b57e129b59f.setContent(html_bf7af5c527b1c63b4ace6b01c99439e8);
+            
+        
+
+        circle_marker_494909f1bcb4dea97a46ada13c473373.bindPopup(popup_365c64e8b389b699b91f3b57e129b59f)
+        ;
+
+        
+    
+    
+            circle_marker_494909f1bcb4dea97a46ada13c473373.bindTooltip(
+                `<div>
+                     Cluster 87
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_32bf860202874424024da9c9d9959446 = L.circleMarker(
+                [32.33550312945674, -111.03735354277696],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_5e8cdead989998f23afe05cc66f5d6dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1bb188a5015d8edcd80a67294ab23c02 = $(`<div id="html_1bb188a5015d8edcd80a67294ab23c02" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 58<br>     <b>Businesses:</b> 460<br>     <b>Total Reviews:</b> 15,708<br>     <b>Avg Reviews/Business:</b> 34.15<br>     <b>Avg Stars:</b> 3.42     </div>`)[0];
+                popup_5e8cdead989998f23afe05cc66f5d6dc.setContent(html_1bb188a5015d8edcd80a67294ab23c02);
+            
+        
+
+        circle_marker_32bf860202874424024da9c9d9959446.bindPopup(popup_5e8cdead989998f23afe05cc66f5d6dc)
+        ;
+
+        
+    
+    
+            circle_marker_32bf860202874424024da9c9d9959446.bindTooltip(
+                `<div>
+                     Cluster 58
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8f364da49177286d726d04575d111d2b = L.circleMarker(
+                [39.63178012071226, -86.12252090290023],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_e25cb787ff6566f11996e6dc74361e08 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5f91e8754db0dce5fb6cb7c01bc8f472 = $(`<div id="html_5f91e8754db0dce5fb6cb7c01bc8f472" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 9<br>     <b>Businesses:</b> 432<br>     <b>Total Reviews:</b> 13,927<br>     <b>Avg Reviews/Business:</b> 32.24<br>     <b>Avg Stars:</b> 3.36     </div>`)[0];
+                popup_e25cb787ff6566f11996e6dc74361e08.setContent(html_5f91e8754db0dce5fb6cb7c01bc8f472);
+            
+        
+
+        circle_marker_8f364da49177286d726d04575d111d2b.bindPopup(popup_e25cb787ff6566f11996e6dc74361e08)
+        ;
+
+        
+    
+    
+            circle_marker_8f364da49177286d726d04575d111d2b.bindTooltip(
+                `<div>
+                     Cluster 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0d50b6328a6348ad1552c56aa92223ad = L.circleMarker(
+                [38.77948844679977, -90.50046699737156],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_4e53b49b3b2a7804faf2e8f75f28d018 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b215fc9a3081d476038a5aef39717eff = $(`<div id="html_b215fc9a3081d476038a5aef39717eff" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 215<br>     <b>Businesses:</b> 429<br>     <b>Total Reviews:</b> 17,890<br>     <b>Avg Reviews/Business:</b> 41.70<br>     <b>Avg Stars:</b> 3.51     </div>`)[0];
+                popup_4e53b49b3b2a7804faf2e8f75f28d018.setContent(html_b215fc9a3081d476038a5aef39717eff);
+            
+        
+
+        circle_marker_0d50b6328a6348ad1552c56aa92223ad.bindPopup(popup_4e53b49b3b2a7804faf2e8f75f28d018)
+        ;
+
+        
+    
+    
+            circle_marker_0d50b6328a6348ad1552c56aa92223ad.bindTooltip(
+                `<div>
+                     Cluster 215
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c0059bde705af23890b86e4ef3a80088 = L.circleMarker(
+                [32.19418785628381, -110.8952744036031],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_7eb65d94922582314765bf997654295e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f575a79391d2618826ad74d6d3ce9d77 = $(`<div id="html_f575a79391d2618826ad74d6d3ce9d77" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 59<br>     <b>Businesses:</b> 420<br>     <b>Total Reviews:</b> 12,289<br>     <b>Avg Reviews/Business:</b> 29.26<br>     <b>Avg Stars:</b> 3.52     </div>`)[0];
+                popup_7eb65d94922582314765bf997654295e.setContent(html_f575a79391d2618826ad74d6d3ce9d77);
+            
+        
+
+        circle_marker_c0059bde705af23890b86e4ef3a80088.bindPopup(popup_7eb65d94922582314765bf997654295e)
+        ;
+
+        
+    
+    
+            circle_marker_c0059bde705af23890b86e4ef3a80088.bindTooltip(
+                `<div>
+                     Cluster 59
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1ef1896194069a0a96a93d7090b8c1bf = L.circleMarker(
+                [40.31720865731715, -75.13085179696884],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_36fd6fe95036c1cbc89bfcf20035a207 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3bc20bf6d1acce91b914219967294fb4 = $(`<div id="html_3bc20bf6d1acce91b914219967294fb4" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 100<br>     <b>Businesses:</b> 414<br>     <b>Total Reviews:</b> 12,688<br>     <b>Avg Reviews/Business:</b> 30.65<br>     <b>Avg Stars:</b> 3.77     </div>`)[0];
+                popup_36fd6fe95036c1cbc89bfcf20035a207.setContent(html_3bc20bf6d1acce91b914219967294fb4);
+            
+        
+
+        circle_marker_1ef1896194069a0a96a93d7090b8c1bf.bindPopup(popup_36fd6fe95036c1cbc89bfcf20035a207)
+        ;
+
+        
+    
+    
+            circle_marker_1ef1896194069a0a96a93d7090b8c1bf.bindTooltip(
+                `<div>
+                     Cluster 100
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_15a647444b113dbffbf4a0473e9e6859 = L.circleMarker(
+                [40.18903564723878, -75.09409342427195],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_9cd06a990e256fa4e160c37e73d27714 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dbec4c5d9dd1788fe34693647d7f4e6e = $(`<div id="html_dbec4c5d9dd1788fe34693647d7f4e6e" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 114<br>     <b>Businesses:</b> 410<br>     <b>Total Reviews:</b> 9,955<br>     <b>Avg Reviews/Business:</b> 24.28<br>     <b>Avg Stars:</b> 3.61     </div>`)[0];
+                popup_9cd06a990e256fa4e160c37e73d27714.setContent(html_dbec4c5d9dd1788fe34693647d7f4e6e);
+            
+        
+
+        circle_marker_15a647444b113dbffbf4a0473e9e6859.bindPopup(popup_9cd06a990e256fa4e160c37e73d27714)
+        ;
+
+        
+    
+    
+            circle_marker_15a647444b113dbffbf4a0473e9e6859.bindTooltip(
+                `<div>
+                     Cluster 114
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eb1f05e58d9e8051c5fc82400a41d890 = L.circleMarker(
+                [28.041688936141664, -82.4046267166495],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_531efdd10da39df53745da81bc9755ac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_422f50332efd552ba522ff7296d78852 = $(`<div id="html_422f50332efd552ba522ff7296d78852" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 77<br>     <b>Businesses:</b> 408<br>     <b>Total Reviews:</b> 15,492<br>     <b>Avg Reviews/Business:</b> 37.97<br>     <b>Avg Stars:</b> 3.43     </div>`)[0];
+                popup_531efdd10da39df53745da81bc9755ac.setContent(html_422f50332efd552ba522ff7296d78852);
+            
+        
+
+        circle_marker_eb1f05e58d9e8051c5fc82400a41d890.bindPopup(popup_531efdd10da39df53745da81bc9755ac)
+        ;
+
+        
+    
+    
+            circle_marker_eb1f05e58d9e8051c5fc82400a41d890.bindTooltip(
+                `<div>
+                     Cluster 77
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b5bb6bf7a57c16e0111f462eefedfba = L.circleMarker(
+                [39.89371310398753, -75.30739537457805],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_5b0b082569fbb3f5f64d0b87e4cc00e7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6a5a88ceda157a9e46a4947f176c897 = $(`<div id="html_c6a5a88ceda157a9e46a4947f176c897" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 39<br>     <b>Businesses:</b> 401<br>     <b>Total Reviews:</b> 8,802<br>     <b>Avg Reviews/Business:</b> 21.95<br>     <b>Avg Stars:</b> 3.49     </div>`)[0];
+                popup_5b0b082569fbb3f5f64d0b87e4cc00e7.setContent(html_c6a5a88ceda157a9e46a4947f176c897);
+            
+        
+
+        circle_marker_0b5bb6bf7a57c16e0111f462eefedfba.bindPopup(popup_5b0b082569fbb3f5f64d0b87e4cc00e7)
+        ;
+
+        
+    
+    
+            circle_marker_0b5bb6bf7a57c16e0111f462eefedfba.bindTooltip(
+                `<div>
+                     Cluster 39
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2e388ba7f1bcb089bf7e6c147c717d27 = L.circleMarker(
+                [38.67381086914671, -90.44654170426944],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_0e0095326b81aea3ec195c4d21edd2f0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fff1973af9191e2da4ef541585c7816a = $(`<div id="html_fff1973af9191e2da4ef541585c7816a" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 225<br>     <b>Businesses:</b> 396<br>     <b>Total Reviews:</b> 16,501<br>     <b>Avg Reviews/Business:</b> 41.67<br>     <b>Avg Stars:</b> 3.49     </div>`)[0];
+                popup_0e0095326b81aea3ec195c4d21edd2f0.setContent(html_fff1973af9191e2da4ef541585c7816a);
+            
+        
+
+        circle_marker_2e388ba7f1bcb089bf7e6c147c717d27.bindPopup(popup_0e0095326b81aea3ec195c4d21edd2f0)
+        ;
+
+        
+    
+    
+            circle_marker_2e388ba7f1bcb089bf7e6c147c717d27.bindTooltip(
+                `<div>
+                     Cluster 225
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ae8fe4189b7066ba6332d8df893d603b = L.circleMarker(
+                [36.10548964331513, -86.81574325428514],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_e9b6e4bd9ebd79cff8499c24625bf080 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_137ca2e31b031d81a35e05967d531e25 = $(`<div id="html_137ca2e31b031d81a35e05967d531e25" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 37<br>     <b>Businesses:</b> 390<br>     <b>Total Reviews:</b> 15,731<br>     <b>Avg Reviews/Business:</b> 40.34<br>     <b>Avg Stars:</b> 3.69     </div>`)[0];
+                popup_e9b6e4bd9ebd79cff8499c24625bf080.setContent(html_137ca2e31b031d81a35e05967d531e25);
+            
+        
+
+        circle_marker_ae8fe4189b7066ba6332d8df893d603b.bindPopup(popup_e9b6e4bd9ebd79cff8499c24625bf080)
+        ;
+
+        
+    
+    
+            circle_marker_ae8fe4189b7066ba6332d8df893d603b.bindTooltip(
+                `<div>
+                     Cluster 37
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1a50d67c1efebcaa3a8efbb110fb6a4d = L.circleMarker(
+                [53.54386374387121, -113.61291762511236],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_c7f96fc6596b93121ee10d3778990cac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd9d2d0408e77a355c07e0c383ddb318 = $(`<div id="html_fd9d2d0408e77a355c07e0c383ddb318" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 76<br>     <b>Businesses:</b> 389<br>     <b>Total Reviews:</b> 6,358<br>     <b>Avg Reviews/Business:</b> 16.34<br>     <b>Avg Stars:</b> 3.42     </div>`)[0];
+                popup_c7f96fc6596b93121ee10d3778990cac.setContent(html_fd9d2d0408e77a355c07e0c383ddb318);
+            
+        
+
+        circle_marker_1a50d67c1efebcaa3a8efbb110fb6a4d.bindPopup(popup_c7f96fc6596b93121ee10d3778990cac)
+        ;
+
+        
+    
+    
+            circle_marker_1a50d67c1efebcaa3a8efbb110fb6a4d.bindTooltip(
+                `<div>
+                     Cluster 76
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c941c39bddb5f824c796e946af037d43 = L.circleMarker(
+                [36.03391356577979, -86.78878792829202],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_99f2e33758c307f24197a4e8d5ffdbb3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_116c76dea999cf67853edd841c0481dd = $(`<div id="html_116c76dea999cf67853edd841c0481dd" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 56<br>     <b>Businesses:</b> 376<br>     <b>Total Reviews:</b> 16,202<br>     <b>Avg Reviews/Business:</b> 43.09<br>     <b>Avg Stars:</b> 3.67     </div>`)[0];
+                popup_99f2e33758c307f24197a4e8d5ffdbb3.setContent(html_116c76dea999cf67853edd841c0481dd);
+            
+        
+
+        circle_marker_c941c39bddb5f824c796e946af037d43.bindPopup(popup_99f2e33758c307f24197a4e8d5ffdbb3)
+        ;
+
+        
+    
+    
+            circle_marker_c941c39bddb5f824c796e946af037d43.bindTooltip(
+                `<div>
+                     Cluster 56
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_342345479e46a7dc6c6dec070136e3a6 = L.circleMarker(
+                [39.92004262532547, -75.32117892205203],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_f8342a61a71d2046280d3f0a29d37c67 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d6e77649d0092594429724d7f9b7d583 = $(`<div id="html_d6e77649d0092594429724d7f9b7d583" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 26<br>     <b>Businesses:</b> 369<br>     <b>Total Reviews:</b> 9,980<br>     <b>Avg Reviews/Business:</b> 27.05<br>     <b>Avg Stars:</b> 3.26     </div>`)[0];
+                popup_f8342a61a71d2046280d3f0a29d37c67.setContent(html_d6e77649d0092594429724d7f9b7d583);
+            
+        
+
+        circle_marker_342345479e46a7dc6c6dec070136e3a6.bindPopup(popup_f8342a61a71d2046280d3f0a29d37c67)
+        ;
+
+        
+    
+    
+            circle_marker_342345479e46a7dc6c6dec070136e3a6.bindTooltip(
+                `<div>
+                     Cluster 26
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7cb7a2b5cb069234e8ff4cc100bc01ec = L.circleMarker(
+                [38.651335586195046, -90.34011712618154],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_9ea3aff2416a0c22382ee3cdc5c0c269 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2b2e1d2ecbcf0654cf415c1a4bff72d0 = $(`<div id="html_2b2e1d2ecbcf0654cf415c1a4bff72d0" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 175<br>     <b>Businesses:</b> 363<br>     <b>Total Reviews:</b> 21,327<br>     <b>Avg Reviews/Business:</b> 58.75<br>     <b>Avg Stars:</b> 3.68     </div>`)[0];
+                popup_9ea3aff2416a0c22382ee3cdc5c0c269.setContent(html_2b2e1d2ecbcf0654cf415c1a4bff72d0);
+            
+        
+
+        circle_marker_7cb7a2b5cb069234e8ff4cc100bc01ec.bindPopup(popup_9ea3aff2416a0c22382ee3cdc5c0c269)
+        ;
+
+        
+    
+    
+            circle_marker_7cb7a2b5cb069234e8ff4cc100bc01ec.bindTooltip(
+                `<div>
+                     Cluster 175
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5429cfcc56309597355217572337afc9 = L.circleMarker(
+                [28.144812046132586, -82.75247784194214],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_73f3449e20e8219e1fd9f1b57df36bd2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d65745eeb6e4bdefadf0e1ce4384f12a = $(`<div id="html_d65745eeb6e4bdefadf0e1ce4384f12a" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 54<br>     <b>Businesses:</b> 356<br>     <b>Total Reviews:</b> 14,490<br>     <b>Avg Reviews/Business:</b> 40.70<br>     <b>Avg Stars:</b> 3.77     </div>`)[0];
+                popup_73f3449e20e8219e1fd9f1b57df36bd2.setContent(html_d65745eeb6e4bdefadf0e1ce4384f12a);
+            
+        
+
+        circle_marker_5429cfcc56309597355217572337afc9.bindPopup(popup_73f3449e20e8219e1fd9f1b57df36bd2)
+        ;
+
+        
+    
+    
+            circle_marker_5429cfcc56309597355217572337afc9.bindTooltip(
+                `<div>
+                     Cluster 54
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9f759cf0cdc0663d2862f76e977744e1 = L.circleMarker(
+                [40.17707761800235, -74.88164184802618],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_47cfb49d99df2ce5b037ef0241979956 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_54bcedc20f9475a54276ef00df4a9750 = $(`<div id="html_54bcedc20f9475a54276ef00df4a9750" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 84<br>     <b>Businesses:</b> 340<br>     <b>Total Reviews:</b> 11,515<br>     <b>Avg Reviews/Business:</b> 33.87<br>     <b>Avg Stars:</b> 3.20     </div>`)[0];
+                popup_47cfb49d99df2ce5b037ef0241979956.setContent(html_54bcedc20f9475a54276ef00df4a9750);
+            
+        
+
+        circle_marker_9f759cf0cdc0663d2862f76e977744e1.bindPopup(popup_47cfb49d99df2ce5b037ef0241979956)
+        ;
+
+        
+    
+    
+            circle_marker_9f759cf0cdc0663d2862f76e977744e1.bindTooltip(
+                `<div>
+                     Cluster 84
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5cc1ba722a1874be0f8bd9cc3568cb44 = L.circleMarker(
+                [40.087728209570535, -75.03224470515565],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_a72260d4d78c2c757d6ce1e2b4c1268f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b18b7916f53b630532cf11e1d929bca5 = $(`<div id="html_b18b7916f53b630532cf11e1d929bca5" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 109<br>     <b>Businesses:</b> 336<br>     <b>Total Reviews:</b> 10,554<br>     <b>Avg Reviews/Business:</b> 31.41<br>     <b>Avg Stars:</b> 3.31     </div>`)[0];
+                popup_a72260d4d78c2c757d6ce1e2b4c1268f.setContent(html_b18b7916f53b630532cf11e1d929bca5);
+            
+        
+
+        circle_marker_5cc1ba722a1874be0f8bd9cc3568cb44.bindPopup(popup_a72260d4d78c2c757d6ce1e2b4c1268f)
+        ;
+
+        
+    
+    
+            circle_marker_5cc1ba722a1874be0f8bd9cc3568cb44.bindTooltip(
+                `<div>
+                     Cluster 109
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1402e4dea8e1252f7d5ed82808052df7 = L.circleMarker(
+                [38.51427948816836, -90.34205257737464],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_64fad5bc2219dc29c4aa9a3ea71ed35b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_da00e7e3dcbd8b80459386fe4de0a448 = $(`<div id="html_da00e7e3dcbd8b80459386fe4de0a448" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 145<br>     <b>Businesses:</b> 335<br>     <b>Total Reviews:</b> 9,340<br>     <b>Avg Reviews/Business:</b> 27.88<br>     <b>Avg Stars:</b> 3.25     </div>`)[0];
+                popup_64fad5bc2219dc29c4aa9a3ea71ed35b.setContent(html_da00e7e3dcbd8b80459386fe4de0a448);
+            
+        
+
+        circle_marker_1402e4dea8e1252f7d5ed82808052df7.bindPopup(popup_64fad5bc2219dc29c4aa9a3ea71ed35b)
+        ;
+
+        
+    
+    
+            circle_marker_1402e4dea8e1252f7d5ed82808052df7.bindTooltip(
+                `<div>
+                     Cluster 145
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a8cfa5f2bb62b7f0567990bcd9199345 = L.circleMarker(
+                [35.9193295407744, -86.8706146669774],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_f0779f80b90fedbc1f2e9980a679a1e5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_94f71b6fbe27fd5480d42e15052e4d2c = $(`<div id="html_94f71b6fbe27fd5480d42e15052e4d2c" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 110<br>     <b>Businesses:</b> 332<br>     <b>Total Reviews:</b> 13,599<br>     <b>Avg Reviews/Business:</b> 40.96<br>     <b>Avg Stars:</b> 3.91     </div>`)[0];
+                popup_f0779f80b90fedbc1f2e9980a679a1e5.setContent(html_94f71b6fbe27fd5480d42e15052e4d2c);
+            
+        
+
+        circle_marker_a8cfa5f2bb62b7f0567990bcd9199345.bindPopup(popup_f0779f80b90fedbc1f2e9980a679a1e5)
+        ;
+
+        
+    
+    
+            circle_marker_a8cfa5f2bb62b7f0567990bcd9199345.bindTooltip(
+                `<div>
+                     Cluster 110
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c1f2572376b81380352185a9a6051205 = L.circleMarker(
+                [40.02714950935093, -75.63945362068704],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_7b0061c4714fad8f08fac85043766a0b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_037e56da999ede27a97335ae27f50454 = $(`<div id="html_037e56da999ede27a97335ae27f50454" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 22<br>     <b>Businesses:</b> 324<br>     <b>Total Reviews:</b> 9,947<br>     <b>Avg Reviews/Business:</b> 30.70<br>     <b>Avg Stars:</b> 3.19     </div>`)[0];
+                popup_7b0061c4714fad8f08fac85043766a0b.setContent(html_037e56da999ede27a97335ae27f50454);
+            
+        
+
+        circle_marker_c1f2572376b81380352185a9a6051205.bindPopup(popup_7b0061c4714fad8f08fac85043766a0b)
+        ;
+
+        
+    
+    
+            circle_marker_c1f2572376b81380352185a9a6051205.bindTooltip(
+                `<div>
+                     Cluster 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_de61b662e54015ea9b97f693f155e53e = L.circleMarker(
+                [40.25453466947668, -75.27734605538657],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_1970476767c38a22efa94297b0a037c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6179aba14315e4757d8b2a219b145a0b = $(`<div id="html_6179aba14315e4757d8b2a219b145a0b" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 230<br>     <b>Businesses:</b> 313<br>     <b>Total Reviews:</b> 8,809<br>     <b>Avg Reviews/Business:</b> 28.14<br>     <b>Avg Stars:</b> 3.57     </div>`)[0];
+                popup_1970476767c38a22efa94297b0a037c2.setContent(html_6179aba14315e4757d8b2a219b145a0b);
+            
+        
+
+        circle_marker_de61b662e54015ea9b97f693f155e53e.bindPopup(popup_1970476767c38a22efa94297b0a037c2)
+        ;
+
+        
+    
+    
+            circle_marker_de61b662e54015ea9b97f693f155e53e.bindTooltip(
+                `<div>
+                     Cluster 230
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a9d5f967bd9aa7d001c6c2076ff47fe9 = L.circleMarker(
+                [40.36341384569901, -74.95324505358086],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_f2eb2939ea682d32fd69f4d75cbb296f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_514681f16d053ef5796ee495f26fa8c1 = $(`<div id="html_514681f16d053ef5796ee495f26fa8c1" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 171<br>     <b>Businesses:</b> 303<br>     <b>Total Reviews:</b> 17,109<br>     <b>Avg Reviews/Business:</b> 56.47<br>     <b>Avg Stars:</b> 3.80     </div>`)[0];
+                popup_f2eb2939ea682d32fd69f4d75cbb296f.setContent(html_514681f16d053ef5796ee495f26fa8c1);
+            
+        
+
+        circle_marker_a9d5f967bd9aa7d001c6c2076ff47fe9.bindPopup(popup_f2eb2939ea682d32fd69f4d75cbb296f)
+        ;
+
+        
+    
+    
+            circle_marker_a9d5f967bd9aa7d001c6c2076ff47fe9.bindTooltip(
+                `<div>
+                     Cluster 171
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e30c89c4e2d3ac8960b55c22af2d4882 = L.circleMarker(
+                [39.76332405132551, -86.35895672312819],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_c1587da623c90a9479719a79d865937c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_60e6316c5d021a8965d4bb8675666e33 = $(`<div id="html_60e6316c5d021a8965d4bb8675666e33" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 60<br>     <b>Businesses:</b> 298<br>     <b>Total Reviews:</b> 9,130<br>     <b>Avg Reviews/Business:</b> 30.64<br>     <b>Avg Stars:</b> 3.52     </div>`)[0];
+                popup_c1587da623c90a9479719a79d865937c.setContent(html_60e6316c5d021a8965d4bb8675666e33);
+            
+        
+
+        circle_marker_e30c89c4e2d3ac8960b55c22af2d4882.bindPopup(popup_c1587da623c90a9479719a79d865937c)
+        ;
+
+        
+    
+    
+            circle_marker_e30c89c4e2d3ac8960b55c22af2d4882.bindTooltip(
+                `<div>
+                     Cluster 60
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a496d15011bd36eda0488fca9f1d9dac = L.circleMarker(
+                [27.976273156230743, -82.82690680080879],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_19e6a4a71a89bfe75e4a3202be2f939a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6c3146edd48e640214ddf18ede67b948 = $(`<div id="html_6c3146edd48e640214ddf18ede67b948" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 160<br>     <b>Businesses:</b> 296<br>     <b>Total Reviews:</b> 32,195<br>     <b>Avg Reviews/Business:</b> 108.77<br>     <b>Avg Stars:</b> 3.72     </div>`)[0];
+                popup_19e6a4a71a89bfe75e4a3202be2f939a.setContent(html_6c3146edd48e640214ddf18ede67b948);
+            
+        
+
+        circle_marker_a496d15011bd36eda0488fca9f1d9dac.bindPopup(popup_19e6a4a71a89bfe75e4a3202be2f939a)
+        ;
+
+        
+    
+    
+            circle_marker_a496d15011bd36eda0488fca9f1d9dac.bindTooltip(
+                `<div>
+                     Cluster 160
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_10386a0d39fd8f6f4f9330de51e96be0 = L.circleMarker(
+                [28.038634711370747, -82.66279167537482],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_782cd0d41d51c25c213f46570e39d066 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_92fc8fe42c60d5f17eb03142865e0adf = $(`<div id="html_92fc8fe42c60d5f17eb03142865e0adf" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 133<br>     <b>Businesses:</b> 294<br>     <b>Total Reviews:</b> 11,657<br>     <b>Avg Reviews/Business:</b> 39.65<br>     <b>Avg Stars:</b> 3.68     </div>`)[0];
+                popup_782cd0d41d51c25c213f46570e39d066.setContent(html_92fc8fe42c60d5f17eb03142865e0adf);
+            
+        
+
+        circle_marker_10386a0d39fd8f6f4f9330de51e96be0.bindPopup(popup_782cd0d41d51c25c213f46570e39d066)
+        ;
+
+        
+    
+    
+            circle_marker_10386a0d39fd8f6f4f9330de51e96be0.bindTooltip(
+                `<div>
+                     Cluster 133
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b40a4e7696a65936d584f64ba762b5ad = L.circleMarker(
+                [36.15771542714089, -86.67322829715567],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_df536f40611515ddde7be578e2a72864 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d7dc1777e73b039b1efad52f36941ba2 = $(`<div id="html_d7dc1777e73b039b1efad52f36941ba2" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 63<br>     <b>Businesses:</b> 291<br>     <b>Total Reviews:</b> 13,563<br>     <b>Avg Reviews/Business:</b> 46.61<br>     <b>Avg Stars:</b> 3.37     </div>`)[0];
+                popup_df536f40611515ddde7be578e2a72864.setContent(html_d7dc1777e73b039b1efad52f36941ba2);
+            
+        
+
+        circle_marker_b40a4e7696a65936d584f64ba762b5ad.bindPopup(popup_df536f40611515ddde7be578e2a72864)
+        ;
+
+        
+    
+    
+            circle_marker_b40a4e7696a65936d584f64ba762b5ad.bindTooltip(
+                `<div>
+                     Cluster 63
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6aee6a48d4b4877d24ceb5ef362f2a82 = L.circleMarker(
+                [27.87375839860801, -82.32540541850244],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_f39e0ebb92d4db2936a56be363ff999a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c05365dfc365206720df1a9c62a0c6fb = $(`<div id="html_c05365dfc365206720df1a9c62a0c6fb" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 75<br>     <b>Businesses:</b> 287<br>     <b>Total Reviews:</b> 11,200<br>     <b>Avg Reviews/Business:</b> 39.02<br>     <b>Avg Stars:</b> 3.54     </div>`)[0];
+                popup_f39e0ebb92d4db2936a56be363ff999a.setContent(html_c05365dfc365206720df1a9c62a0c6fb);
+            
+        
+
+        circle_marker_6aee6a48d4b4877d24ceb5ef362f2a82.bindPopup(popup_f39e0ebb92d4db2936a56be363ff999a)
+        ;
+
+        
+    
+    
+            circle_marker_6aee6a48d4b4877d24ceb5ef362f2a82.bindTooltip(
+                `<div>
+                     Cluster 75
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bc8a1e8e594c17037c2fd1990e488168 = L.circleMarker(
+                [40.14004570745863, -75.00669990865035],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_c6fc9ab2214c50a487f61a4eb1d407da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_317752f30abf08a0268e004c80312639 = $(`<div id="html_317752f30abf08a0268e004c80312639" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 90<br>     <b>Businesses:</b> 278<br>     <b>Total Reviews:</b> 7,219<br>     <b>Avg Reviews/Business:</b> 25.97<br>     <b>Avg Stars:</b> 3.59     </div>`)[0];
+                popup_c6fc9ab2214c50a487f61a4eb1d407da.setContent(html_317752f30abf08a0268e004c80312639);
+            
+        
+
+        circle_marker_bc8a1e8e594c17037c2fd1990e488168.bindPopup(popup_c6fc9ab2214c50a487f61a4eb1d407da)
+        ;
+
+        
+    
+    
+            circle_marker_bc8a1e8e594c17037c2fd1990e488168.bindTooltip(
+                `<div>
+                     Cluster 90
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ba4e2de8bfe727e8e5668a8165f6f44c = L.circleMarker(
+                [27.786068858114493, -82.78365231361158],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_8da2a61edf3274a46d369639b7801155 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eab561ebb601db998bc2704e78b29476 = $(`<div id="html_eab561ebb601db998bc2704e78b29476" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 50<br>     <b>Businesses:</b> 276<br>     <b>Total Reviews:</b> 20,553<br>     <b>Avg Reviews/Business:</b> 74.47<br>     <b>Avg Stars:</b> 3.80     </div>`)[0];
+                popup_8da2a61edf3274a46d369639b7801155.setContent(html_eab561ebb601db998bc2704e78b29476);
+            
+        
+
+        circle_marker_ba4e2de8bfe727e8e5668a8165f6f44c.bindPopup(popup_8da2a61edf3274a46d369639b7801155)
+        ;
+
+        
+    
+    
+            circle_marker_ba4e2de8bfe727e8e5668a8165f6f44c.bindTooltip(
+                `<div>
+                     Cluster 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d0bae3d057e89c714e69bf3f084ef8ba = L.circleMarker(
+                [40.230203875691664, -74.93611536101884],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_29de89a30071b9ee970f724ff22182cb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c4318cbd8d9c95546f89af53f48dc629 = $(`<div id="html_c4318cbd8d9c95546f89af53f48dc629" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 189<br>     <b>Businesses:</b> 276<br>     <b>Total Reviews:</b> 9,694<br>     <b>Avg Reviews/Business:</b> 35.12<br>     <b>Avg Stars:</b> 3.67     </div>`)[0];
+                popup_29de89a30071b9ee970f724ff22182cb.setContent(html_c4318cbd8d9c95546f89af53f48dc629);
+            
+        
+
+        circle_marker_d0bae3d057e89c714e69bf3f084ef8ba.bindPopup(popup_29de89a30071b9ee970f724ff22182cb)
+        ;
+
+        
+    
+    
+            circle_marker_d0bae3d057e89c714e69bf3f084ef8ba.bindTooltip(
+                `<div>
+                     Cluster 189
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_061f09b6d25b7adafa84ef894d67f331 = L.circleMarker(
+                [28.188032523243272, -82.35739910804982],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_d8c7dbe9d9f6b8618a55899ee3b3735b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1ee0277f85db47aa97e64628230914b7 = $(`<div id="html_1ee0277f85db47aa97e64628230914b7" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 132<br>     <b>Businesses:</b> 275<br>     <b>Total Reviews:</b> 12,735<br>     <b>Avg Reviews/Business:</b> 46.31<br>     <b>Avg Stars:</b> 3.55     </div>`)[0];
+                popup_d8c7dbe9d9f6b8618a55899ee3b3735b.setContent(html_1ee0277f85db47aa97e64628230914b7);
+            
+        
+
+        circle_marker_061f09b6d25b7adafa84ef894d67f331.bindPopup(popup_d8c7dbe9d9f6b8618a55899ee3b3735b)
+        ;
+
+        
+    
+    
+            circle_marker_061f09b6d25b7adafa84ef894d67f331.bindTooltip(
+                `<div>
+                     Cluster 132
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c8766597afbcf450562d6f2c7aff22d9 = L.circleMarker(
+                [39.811054876772, -75.54535593143746],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_b043a27691c51bd25745e932d03fa3dd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2b30eb381758c53d4cf0a8ec3a65ba60 = $(`<div id="html_2b30eb381758c53d4cf0a8ec3a65ba60" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 23<br>     <b>Businesses:</b> 275<br>     <b>Total Reviews:</b> 9,612<br>     <b>Avg Reviews/Business:</b> 34.95<br>     <b>Avg Stars:</b> 3.28     </div>`)[0];
+                popup_b043a27691c51bd25745e932d03fa3dd.setContent(html_2b30eb381758c53d4cf0a8ec3a65ba60);
+            
+        
+
+        circle_marker_c8766597afbcf450562d6f2c7aff22d9.bindPopup(popup_b043a27691c51bd25745e932d03fa3dd)
+        ;
+
+        
+    
+    
+            circle_marker_c8766597afbcf450562d6f2c7aff22d9.bindTooltip(
+                `<div>
+                     Cluster 23
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf0978e71d31946c937f817a725101d9 = L.circleMarker(
+                [28.06206169077933, -82.56835235496973],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_cda4480b701dff74c0db2b2fc96a741c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c7dca51ca9c80f6f0a3a69c597d68e07 = $(`<div id="html_c7dca51ca9c80f6f0a3a69c597d68e07" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 185<br>     <b>Businesses:</b> 271<br>     <b>Total Reviews:</b> 8,807<br>     <b>Avg Reviews/Business:</b> 32.50<br>     <b>Avg Stars:</b> 3.48     </div>`)[0];
+                popup_cda4480b701dff74c0db2b2fc96a741c.setContent(html_c7dca51ca9c80f6f0a3a69c597d68e07);
+            
+        
+
+        circle_marker_bf0978e71d31946c937f817a725101d9.bindPopup(popup_cda4480b701dff74c0db2b2fc96a741c)
+        ;
+
+        
+    
+    
+            circle_marker_bf0978e71d31946c937f817a725101d9.bindTooltip(
+                `<div>
+                     Cluster 185
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_10b4366ef7acbb31c894503046d8445d = L.circleMarker(
+                [39.91945658401585, -75.3887865611249],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_bf04e0acd99b190eb5c028e66bc613ed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_52b237cc1e65754db4433fef9ffcd957 = $(`<div id="html_52b237cc1e65754db4433fef9ffcd957" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 181<br>     <b>Businesses:</b> 265<br>     <b>Total Reviews:</b> 11,086<br>     <b>Avg Reviews/Business:</b> 41.83<br>     <b>Avg Stars:</b> 3.78     </div>`)[0];
+                popup_bf04e0acd99b190eb5c028e66bc613ed.setContent(html_52b237cc1e65754db4433fef9ffcd957);
+            
+        
+
+        circle_marker_10b4366ef7acbb31c894503046d8445d.bindPopup(popup_bf04e0acd99b190eb5c028e66bc613ed)
+        ;
+
+        
+    
+    
+            circle_marker_10b4366ef7acbb31c894503046d8445d.bindTooltip(
+                `<div>
+                     Cluster 181
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cc5b0933400b6f68e246c91cdfb8f1dc = L.circleMarker(
+                [27.99804424004542, -82.57515436406831],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_745e93a5d24ce03bdbb9c32a4c1cd208 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3fa0b9d92367f0c7869e6eb9b053667c = $(`<div id="html_3fa0b9d92367f0c7869e6eb9b053667c" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 83<br>     <b>Businesses:</b> 262<br>     <b>Total Reviews:</b> 7,850<br>     <b>Avg Reviews/Business:</b> 29.96<br>     <b>Avg Stars:</b> 3.49     </div>`)[0];
+                popup_745e93a5d24ce03bdbb9c32a4c1cd208.setContent(html_3fa0b9d92367f0c7869e6eb9b053667c);
+            
+        
+
+        circle_marker_cc5b0933400b6f68e246c91cdfb8f1dc.bindPopup(popup_745e93a5d24ce03bdbb9c32a4c1cd208)
+        ;
+
+        
+    
+    
+            circle_marker_cc5b0933400b6f68e246c91cdfb8f1dc.bindTooltip(
+                `<div>
+                     Cluster 83
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8301f0379c4d4b56c09d03dbdccba040 = L.circleMarker(
+                [40.10488538332996, -74.94780035030116],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_de643294b31eeab308d69b237bffab24 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_32a7a7de970ae2a86fdb3399a1b6536f = $(`<div id="html_32a7a7de970ae2a86fdb3399a1b6536f" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 294<br>     <b>Businesses:</b> 257<br>     <b>Total Reviews:</b> 8,594<br>     <b>Avg Reviews/Business:</b> 33.44<br>     <b>Avg Stars:</b> 3.30     </div>`)[0];
+                popup_de643294b31eeab308d69b237bffab24.setContent(html_32a7a7de970ae2a86fdb3399a1b6536f);
+            
+        
+
+        circle_marker_8301f0379c4d4b56c09d03dbdccba040.bindPopup(popup_de643294b31eeab308d69b237bffab24)
+        ;
+
+        
+    
+    
+            circle_marker_8301f0379c4d4b56c09d03dbdccba040.bindTooltip(
+                `<div>
+                     Cluster 294
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_73f50cdf31dddaa6ed925b2a7fcca98f = L.circleMarker(
+                [38.79665447341373, -90.32833449635493],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_21a744ce36167fc50150f0edb70856e7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_97d8764610f49f54c0330760cb43aee7 = $(`<div id="html_97d8764610f49f54c0330760cb43aee7" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 418<br>     <b>Businesses:</b> 255<br>     <b>Total Reviews:</b> 6,063<br>     <b>Avg Reviews/Business:</b> 23.78<br>     <b>Avg Stars:</b> 3.15     </div>`)[0];
+                popup_21a744ce36167fc50150f0edb70856e7.setContent(html_97d8764610f49f54c0330760cb43aee7);
+            
+        
+
+        circle_marker_73f50cdf31dddaa6ed925b2a7fcca98f.bindPopup(popup_21a744ce36167fc50150f0edb70856e7)
+        ;
+
+        
+    
+    
+            circle_marker_73f50cdf31dddaa6ed925b2a7fcca98f.bindTooltip(
+                `<div>
+                     Cluster 418
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e5d8ef09ee8cefec2662d290efcc7fff = L.circleMarker(
+                [39.87199341101063, -75.53923429039173],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_8095618faa24a7fd82de5ccae35b5ed5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fa7c9eb0b9e952c6757e71e72d0c0741 = $(`<div id="html_fa7c9eb0b9e952c6757e71e72d0c0741" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 193<br>     <b>Businesses:</b> 254<br>     <b>Total Reviews:</b> 9,643<br>     <b>Avg Reviews/Business:</b> 37.96<br>     <b>Avg Stars:</b> 3.45     </div>`)[0];
+                popup_8095618faa24a7fd82de5ccae35b5ed5.setContent(html_fa7c9eb0b9e952c6757e71e72d0c0741);
+            
+        
+
+        circle_marker_e5d8ef09ee8cefec2662d290efcc7fff.bindPopup(popup_8095618faa24a7fd82de5ccae35b5ed5)
+        ;
+
+        
+    
+    
+            circle_marker_e5d8ef09ee8cefec2662d290efcc7fff.bindTooltip(
+                `<div>
+                     Cluster 193
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5d2fcbe1e0d9bc6e0b36cc15c3a9cad1 = L.circleMarker(
+                [34.398385036207536, -119.51968733259088],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_7c6ba37fd688d94887e2953c6eb166ba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e1cce7d12ef75f2a2801c1244604a0bb = $(`<div id="html_e1cce7d12ef75f2a2801c1244604a0bb" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 221<br>     <b>Businesses:</b> 252<br>     <b>Total Reviews:</b> 14,560<br>     <b>Avg Reviews/Business:</b> 57.78<br>     <b>Avg Stars:</b> 3.97     </div>`)[0];
+                popup_7c6ba37fd688d94887e2953c6eb166ba.setContent(html_e1cce7d12ef75f2a2801c1244604a0bb);
+            
+        
+
+        circle_marker_5d2fcbe1e0d9bc6e0b36cc15c3a9cad1.bindPopup(popup_7c6ba37fd688d94887e2953c6eb166ba)
+        ;
+
+        
+    
+    
+            circle_marker_5d2fcbe1e0d9bc6e0b36cc15c3a9cad1.bindTooltip(
+                `<div>
+                     Cluster 221
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1047e96dd5cfa5381e1892f68931db99 = L.circleMarker(
+                [40.13271204198685, -75.52275129990717],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_956a0d324ddbfeca8086e99beb94bc83 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d88d737621ce9161872e7a827b217466 = $(`<div id="html_d88d737621ce9161872e7a827b217466" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 354<br>     <b>Businesses:</b> 251<br>     <b>Total Reviews:</b> 9,056<br>     <b>Avg Reviews/Business:</b> 36.08<br>     <b>Avg Stars:</b> 3.70     </div>`)[0];
+                popup_956a0d324ddbfeca8086e99beb94bc83.setContent(html_d88d737621ce9161872e7a827b217466);
+            
+        
+
+        circle_marker_1047e96dd5cfa5381e1892f68931db99.bindPopup(popup_956a0d324ddbfeca8086e99beb94bc83)
+        ;
+
+        
+    
+    
+            circle_marker_1047e96dd5cfa5381e1892f68931db99.bindTooltip(
+                `<div>
+                     Cluster 354
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_450bdd14426f836b8fb23e3d6e928de7 = L.circleMarker(
+                [53.52288917380562, -113.62178276325704],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_ff2cf31e840ec5f16f44537d96c255ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_79c5d154411c0bb7e63de5e0edee63bc = $(`<div id="html_79c5d154411c0bb7e63de5e0edee63bc" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 125<br>     <b>Businesses:</b> 249<br>     <b>Total Reviews:</b> 4,278<br>     <b>Avg Reviews/Business:</b> 17.18<br>     <b>Avg Stars:</b> 3.15     </div>`)[0];
+                popup_ff2cf31e840ec5f16f44537d96c255ef.setContent(html_79c5d154411c0bb7e63de5e0edee63bc);
+            
+        
+
+        circle_marker_450bdd14426f836b8fb23e3d6e928de7.bindPopup(popup_ff2cf31e840ec5f16f44537d96c255ef)
+        ;
+
+        
+    
+    
+            circle_marker_450bdd14426f836b8fb23e3d6e928de7.bindTooltip(
+                `<div>
+                     Cluster 125
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_94f132f4d8715ac1a4a66f7af7cacfe2 = L.circleMarker(
+                [40.04192838755462, -75.54359520003695],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_509bb9e415573416a8347604503aed89 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_037e2440e73c204ab1d6ddab49d93229 = $(`<div id="html_037e2440e73c204ab1d6ddab49d93229" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 120<br>     <b>Businesses:</b> 249<br>     <b>Total Reviews:</b> 8,811<br>     <b>Avg Reviews/Business:</b> 35.39<br>     <b>Avg Stars:</b> 3.61     </div>`)[0];
+                popup_509bb9e415573416a8347604503aed89.setContent(html_037e2440e73c204ab1d6ddab49d93229);
+            
+        
+
+        circle_marker_94f132f4d8715ac1a4a66f7af7cacfe2.bindPopup(popup_509bb9e415573416a8347604503aed89)
+        ;
+
+        
+    
+    
+            circle_marker_94f132f4d8715ac1a4a66f7af7cacfe2.bindTooltip(
+                `<div>
+                     Cluster 120
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6cc5e5af17b1ad818d848f54ff53f136 = L.circleMarker(
+                [38.7077120140161, -90.44204473387964],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_f82426e0896639314b4f33486ff7e1db = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1f337f155462e8da1b086d0e8211059c = $(`<div id="html_1f337f155462e8da1b086d0e8211059c" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 342<br>     <b>Businesses:</b> 236<br>     <b>Total Reviews:</b> 8,510<br>     <b>Avg Reviews/Business:</b> 36.06<br>     <b>Avg Stars:</b> 3.33     </div>`)[0];
+                popup_f82426e0896639314b4f33486ff7e1db.setContent(html_1f337f155462e8da1b086d0e8211059c);
+            
+        
+
+        circle_marker_6cc5e5af17b1ad818d848f54ff53f136.bindPopup(popup_f82426e0896639314b4f33486ff7e1db)
+        ;
+
+        
+    
+    
+            circle_marker_6cc5e5af17b1ad818d848f54ff53f136.bindTooltip(
+                `<div>
+                     Cluster 342
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1aefb274dcb3a5eaaea56ec967c10d67 = L.circleMarker(
+                [36.18665610226111, -86.61650804736112],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_4c10f167e7ce9d359f1f80b00fef86a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_effa66d562ebff804132e066b084be08 = $(`<div id="html_effa66d562ebff804132e066b084be08" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 98<br>     <b>Businesses:</b> 234<br>     <b>Total Reviews:</b> 7,134<br>     <b>Avg Reviews/Business:</b> 30.49<br>     <b>Avg Stars:</b> 3.36     </div>`)[0];
+                popup_4c10f167e7ce9d359f1f80b00fef86a1.setContent(html_effa66d562ebff804132e066b084be08);
+            
+        
+
+        circle_marker_1aefb274dcb3a5eaaea56ec967c10d67.bindPopup(popup_4c10f167e7ce9d359f1f80b00fef86a1)
+        ;
+
+        
+    
+    
+            circle_marker_1aefb274dcb3a5eaaea56ec967c10d67.bindTooltip(
+                `<div>
+                     Cluster 98
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_67cde2df1bc8b18416e45a2bf07301ef = L.circleMarker(
+                [29.97895276777652, -90.15898502204436],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_fc2b4643e39c6c7340ff91942b73c8d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fffb6d8ea28398ca416c536aebb0909d = $(`<div id="html_fffb6d8ea28398ca416c536aebb0909d" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 273<br>     <b>Businesses:</b> 230<br>     <b>Total Reviews:</b> 7,899<br>     <b>Avg Reviews/Business:</b> 34.34<br>     <b>Avg Stars:</b> 3.57     </div>`)[0];
+                popup_fc2b4643e39c6c7340ff91942b73c8d6.setContent(html_fffb6d8ea28398ca416c536aebb0909d);
+            
+        
+
+        circle_marker_67cde2df1bc8b18416e45a2bf07301ef.bindPopup(popup_fc2b4643e39c6c7340ff91942b73c8d6)
+        ;
+
+        
+    
+    
+            circle_marker_67cde2df1bc8b18416e45a2bf07301ef.bindTooltip(
+                `<div>
+                     Cluster 273
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0a0941440c1bb7434302c017fe24e7bf = L.circleMarker(
+                [39.88898491535877, -75.23766615361227],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_f16c0e4e05a8a0960fc87f238e73b20a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_287520fe1315eec40f2799789874b1f9 = $(`<div id="html_287520fe1315eec40f2799789874b1f9" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 106<br>     <b>Businesses:</b> 228<br>     <b>Total Reviews:</b> 15,064<br>     <b>Avg Reviews/Business:</b> 66.07<br>     <b>Avg Stars:</b> 2.83     </div>`)[0];
+                popup_f16c0e4e05a8a0960fc87f238e73b20a.setContent(html_287520fe1315eec40f2799789874b1f9);
+            
+        
+
+        circle_marker_0a0941440c1bb7434302c017fe24e7bf.bindPopup(popup_f16c0e4e05a8a0960fc87f238e73b20a)
+        ;
+
+        
+    
+    
+            circle_marker_0a0941440c1bb7434302c017fe24e7bf.bindTooltip(
+                `<div>
+                     Cluster 106
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dec2a070a13486088bba6eccd40a055c = L.circleMarker(
+                [39.742062541255066, -75.03798667850792],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_50208131d80eee5b2703fbce1203601d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_46dff92e408cfc226f81b07d99ff9546 = $(`<div id="html_46dff92e408cfc226f81b07d99ff9546" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 279<br>     <b>Businesses:</b> 227<br>     <b>Total Reviews:</b> 5,457<br>     <b>Avg Reviews/Business:</b> 24.04<br>     <b>Avg Stars:</b> 3.29     </div>`)[0];
+                popup_50208131d80eee5b2703fbce1203601d.setContent(html_46dff92e408cfc226f81b07d99ff9546);
+            
+        
+
+        circle_marker_dec2a070a13486088bba6eccd40a055c.bindPopup(popup_50208131d80eee5b2703fbce1203601d)
+        ;
+
+        
+    
+    
+            circle_marker_dec2a070a13486088bba6eccd40a055c.bindTooltip(
+                `<div>
+                     Cluster 279
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ea2f9b7078de4439b83e47a83cf217e3 = L.circleMarker(
+                [40.239263409852, -75.24085701458934],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_39d4c6d23abc0fced68cf656b33dc69d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_44e4652b34ea8142de045540487a9bc6 = $(`<div id="html_44e4652b34ea8142de045540487a9bc6" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 147<br>     <b>Businesses:</b> 225<br>     <b>Total Reviews:</b> 7,959<br>     <b>Avg Reviews/Business:</b> 35.37<br>     <b>Avg Stars:</b> 3.14     </div>`)[0];
+                popup_39d4c6d23abc0fced68cf656b33dc69d.setContent(html_44e4652b34ea8142de045540487a9bc6);
+            
+        
+
+        circle_marker_ea2f9b7078de4439b83e47a83cf217e3.bindPopup(popup_39d4c6d23abc0fced68cf656b33dc69d)
+        ;
+
+        
+    
+    
+            circle_marker_ea2f9b7078de4439b83e47a83cf217e3.bindTooltip(
+                `<div>
+                     Cluster 147
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_81a0434b833834e1b3e5fac42a4b92ac = L.circleMarker(
+                [39.581595785579374, -119.73396463179012],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_b3a655e2611bfa533e23d639e73f9536 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_47e598e4c8809790cf79fc611cddd1e8 = $(`<div id="html_47e598e4c8809790cf79fc611cddd1e8" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 250<br>     <b>Businesses:</b> 223<br>     <b>Total Reviews:</b> 12,193<br>     <b>Avg Reviews/Business:</b> 54.68<br>     <b>Avg Stars:</b> 3.46     </div>`)[0];
+                popup_b3a655e2611bfa533e23d639e73f9536.setContent(html_47e598e4c8809790cf79fc611cddd1e8);
+            
+        
+
+        circle_marker_81a0434b833834e1b3e5fac42a4b92ac.bindPopup(popup_b3a655e2611bfa533e23d639e73f9536)
+        ;
+
+        
+    
+    
+            circle_marker_81a0434b833834e1b3e5fac42a4b92ac.bindTooltip(
+                `<div>
+                     Cluster 250
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6e9fbdc3d5cbd54cc3d7f63cf87d965e = L.circleMarker(
+                [35.91559680921532, -86.82898427798423],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_e0bc61005f8b103ae42de35a87c731e2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4193b58db09051dba0b1d21ec4cbd9ac = $(`<div id="html_4193b58db09051dba0b1d21ec4cbd9ac" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 271<br>     <b>Businesses:</b> 222<br>     <b>Total Reviews:</b> 6,789<br>     <b>Avg Reviews/Business:</b> 30.58<br>     <b>Avg Stars:</b> 3.39     </div>`)[0];
+                popup_e0bc61005f8b103ae42de35a87c731e2.setContent(html_4193b58db09051dba0b1d21ec4cbd9ac);
+            
+        
+
+        circle_marker_6e9fbdc3d5cbd54cc3d7f63cf87d965e.bindPopup(popup_e0bc61005f8b103ae42de35a87c731e2)
+        ;
+
+        
+    
+    
+            circle_marker_6e9fbdc3d5cbd54cc3d7f63cf87d965e.bindTooltip(
+                `<div>
+                     Cluster 271
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1bbd75755139d3b1d4de9d367fab6bb8 = L.circleMarker(
+                [36.30014605494398, -86.69624594678797],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_8b905d27090e5ffb4da31ca0d8067617 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_21c5c325e973eca09c802c219009515e = $(`<div id="html_21c5c325e973eca09c802c219009515e" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 68<br>     <b>Businesses:</b> 216<br>     <b>Total Reviews:</b> 5,349<br>     <b>Avg Reviews/Business:</b> 24.76<br>     <b>Avg Stars:</b> 3.09     </div>`)[0];
+                popup_8b905d27090e5ffb4da31ca0d8067617.setContent(html_21c5c325e973eca09c802c219009515e);
+            
+        
+
+        circle_marker_1bbd75755139d3b1d4de9d367fab6bb8.bindPopup(popup_8b905d27090e5ffb4da31ca0d8067617)
+        ;
+
+        
+    
+    
+            circle_marker_1bbd75755139d3b1d4de9d367fab6bb8.bindTooltip(
+                `<div>
+                     Cluster 68
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b7a0184495442000e56f94aee8391de6 = L.circleMarker(
+                [38.65552891101822, -90.30144137228272],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_87ad8afef49dc09b09424e7c4d9bc487 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14fd55ee287ba52c806fa90ce60007e5 = $(`<div id="html_14fd55ee287ba52c806fa90ce60007e5" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 289<br>     <b>Businesses:</b> 214<br>     <b>Total Reviews:</b> 18,789<br>     <b>Avg Reviews/Business:</b> 87.80<br>     <b>Avg Stars:</b> 3.73     </div>`)[0];
+                popup_87ad8afef49dc09b09424e7c4d9bc487.setContent(html_14fd55ee287ba52c806fa90ce60007e5);
+            
+        
+
+        circle_marker_b7a0184495442000e56f94aee8391de6.bindPopup(popup_87ad8afef49dc09b09424e7c4d9bc487)
+        ;
+
+        
+    
+    
+            circle_marker_b7a0184495442000e56f94aee8391de6.bindTooltip(
+                `<div>
+                     Cluster 289
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_399dfafc1915303c225780f1423e6a61 = L.circleMarker(
+                [39.61750077376038, -86.15873782991886],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_e47d1a459d390d3bcc8b447212d30f2b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_84ed12eb0c3eb9c078038d84796b6f27 = $(`<div id="html_84ed12eb0c3eb9c078038d84796b6f27" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 64<br>     <b>Businesses:</b> 212<br>     <b>Total Reviews:</b> 4,868<br>     <b>Avg Reviews/Business:</b> 22.96<br>     <b>Avg Stars:</b> 3.48     </div>`)[0];
+                popup_e47d1a459d390d3bcc8b447212d30f2b.setContent(html_84ed12eb0c3eb9c078038d84796b6f27);
+            
+        
+
+        circle_marker_399dfafc1915303c225780f1423e6a61.bindPopup(popup_e47d1a459d390d3bcc8b447212d30f2b)
+        ;
+
+        
+    
+    
+            circle_marker_399dfafc1915303c225780f1423e6a61.bindTooltip(
+                `<div>
+                     Cluster 64
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f4349ee20d74bbd24e5a8c00c1729a1f = L.circleMarker(
+                [28.02314220854363, -82.54864302074265],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_db74ff9b634f2cc0f1e6d6adc8f25612 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e28f10a011b0ecf3e6df592a23cacdaf = $(`<div id="html_e28f10a011b0ecf3e6df592a23cacdaf" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 304<br>     <b>Businesses:</b> 204<br>     <b>Total Reviews:</b> 8,748<br>     <b>Avg Reviews/Business:</b> 42.88<br>     <b>Avg Stars:</b> 3.35     </div>`)[0];
+                popup_db74ff9b634f2cc0f1e6d6adc8f25612.setContent(html_e28f10a011b0ecf3e6df592a23cacdaf);
+            
+        
+
+        circle_marker_f4349ee20d74bbd24e5a8c00c1729a1f.bindPopup(popup_db74ff9b634f2cc0f1e6d6adc8f25612)
+        ;
+
+        
+    
+    
+            circle_marker_f4349ee20d74bbd24e5a8c00c1729a1f.bindTooltip(
+                `<div>
+                     Cluster 304
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0e92b4fa942d25ea32cdabb2a3172429 = L.circleMarker(
+                [34.4295296632302, -119.87274286040396],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_6f96b40b289fce1c87eb44a4d91549d5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd2d738684597b9274569fdcfefff0e9 = $(`<div id="html_fd2d738684597b9274569fdcfefff0e9" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 158<br>     <b>Businesses:</b> 202<br>     <b>Total Reviews:</b> 14,158<br>     <b>Avg Reviews/Business:</b> 70.09<br>     <b>Avg Stars:</b> 3.63     </div>`)[0];
+                popup_6f96b40b289fce1c87eb44a4d91549d5.setContent(html_fd2d738684597b9274569fdcfefff0e9);
+            
+        
+
+        circle_marker_0e92b4fa942d25ea32cdabb2a3172429.bindPopup(popup_6f96b40b289fce1c87eb44a4d91549d5)
+        ;
+
+        
+    
+    
+            circle_marker_0e92b4fa942d25ea32cdabb2a3172429.bindTooltip(
+                `<div>
+                     Cluster 158
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_86c87c9b9edfc91aefeca138f8ed59ea = L.circleMarker(
+                [39.83596006811168, -75.0068251830335],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_e1cf20b418b852f39c51cf72293c5d80 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5758f6c76b619eb55190578604bdae81 = $(`<div id="html_5758f6c76b619eb55190578604bdae81" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 113<br>     <b>Businesses:</b> 197<br>     <b>Total Reviews:</b> 5,339<br>     <b>Avg Reviews/Business:</b> 27.10<br>     <b>Avg Stars:</b> 3.53     </div>`)[0];
+                popup_e1cf20b418b852f39c51cf72293c5d80.setContent(html_5758f6c76b619eb55190578604bdae81);
+            
+        
+
+        circle_marker_86c87c9b9edfc91aefeca138f8ed59ea.bindPopup(popup_e1cf20b418b852f39c51cf72293c5d80)
+        ;
+
+        
+    
+    
+            circle_marker_86c87c9b9edfc91aefeca138f8ed59ea.bindTooltip(
+                `<div>
+                     Cluster 113
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_35078d88454abffc33a1958a36220d21 = L.circleMarker(
+                [40.04064424045736, -75.48935004148528],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_2cb18b476c72b576ed727610682c361d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aef1ebeb65941965df3739ef835b48aa = $(`<div id="html_aef1ebeb65941965df3739ef835b48aa" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 20<br>     <b>Businesses:</b> 197<br>     <b>Total Reviews:</b> 5,732<br>     <b>Avg Reviews/Business:</b> 29.10<br>     <b>Avg Stars:</b> 3.84     </div>`)[0];
+                popup_2cb18b476c72b576ed727610682c361d.setContent(html_aef1ebeb65941965df3739ef835b48aa);
+            
+        
+
+        circle_marker_35078d88454abffc33a1958a36220d21.bindPopup(popup_2cb18b476c72b576ed727610682c361d)
+        ;
+
+        
+    
+    
+            circle_marker_35078d88454abffc33a1958a36220d21.bindTooltip(
+                `<div>
+                     Cluster 20
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd6159de310aba0d559a94395d84f828 = L.circleMarker(
+                [43.69209663398622, -116.3480797555801],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_8589de222666909e3e7cb34c17415ac4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5eb20fad2e6fe5f62751c1ea5e841230 = $(`<div id="html_5eb20fad2e6fe5f62751c1ea5e841230" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 216<br>     <b>Businesses:</b> 196<br>     <b>Total Reviews:</b> 7,171<br>     <b>Avg Reviews/Business:</b> 36.59<br>     <b>Avg Stars:</b> 3.88     </div>`)[0];
+                popup_8589de222666909e3e7cb34c17415ac4.setContent(html_5eb20fad2e6fe5f62751c1ea5e841230);
+            
+        
+
+        circle_marker_fd6159de310aba0d559a94395d84f828.bindPopup(popup_8589de222666909e3e7cb34c17415ac4)
+        ;
+
+        
+    
+    
+            circle_marker_fd6159de310aba0d559a94395d84f828.bindTooltip(
+                `<div>
+                     Cluster 216
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5ec2e20e4f972bdd61abc19d91a6d9a9 = L.circleMarker(
+                [39.82799072948586, -86.24310609019999],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_030a597bda2e8475ab8576e1cf29adf1);
+        
+    
+        var popup_9bbf97aba5ea8766044c9cf80ef50e90 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_83072b64107a3d82beb836ee18b6bf2b = $(`<div id="html_83072b64107a3d82beb836ee18b6bf2b" style="width: 100.0%; height: 100.0%;">     <b>Cluster ID:</b> 196<br>     <b>Businesses:</b> 191<br>     <b>Total Reviews:</b> 7,146<br>     <b>Avg Reviews/Business:</b> 37.41<br>     <b>Avg Stars:</b> 3.47     </div>`)[0];
+                popup_9bbf97aba5ea8766044c9cf80ef50e90.setContent(html_83072b64107a3d82beb836ee18b6bf2b);
+            
+        
+
+        circle_marker_5ec2e20e4f972bdd61abc19d91a6d9a9.bindPopup(popup_9bbf97aba5ea8766044c9cf80ef50e90)
+        ;
+
+        
+    
+    
+            circle_marker_5ec2e20e4f972bdd61abc19d91a6d9a9.bindTooltip(
+                `<div>
+                     Cluster 196
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

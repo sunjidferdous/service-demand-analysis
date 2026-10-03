@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Raw Yelp dataset
+data/raw/
+
+# Large processed datasets
+data/processed/forecasting_dataset.csv
+data/processed/monthly_activity.csv
+data/processed/dbscan_businesses.csv
+data/processed/spatial_businesses.csv
+
+# Local/editor files
+.vscode/
