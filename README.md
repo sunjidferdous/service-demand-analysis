@@ -1,5 +1,11 @@
 # Spatial-Temporal Demand & Customer Sentiment Analysis
 
+## 🚀 Live Dashboard
+
+**[Open the Interactive Streamlit Dashboard](https://service-demand-analysis.streamlit.app)**
+
+The live dashboard provides interactive access to the project's spatial hotspot analysis, demand forecasting, customer sentiment analysis, and aspect-based sentiment analysis.
+
 An end-to-end data mining project using the **Yelp Open Dataset** to analyze spatial business activity, temporal review activity, demand forecasting, and customer sentiment.
 
 > **Important:** The Yelp Open Dataset does not contain direct service-request, booking, sales, or transaction records. Therefore, this project uses **monthly review activity as a proxy for observed customer activity/demand**.
